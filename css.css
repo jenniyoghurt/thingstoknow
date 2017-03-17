@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Oxygen Mono', monospace;
+	background:rgba(252,255,255,1.00);
+}
+header {
+	background:rgba(220,255,255,1.00);
+}
+#content{
+	margin: 0 auto;
+	width: 800px;
+}
+h1 {
+	font-size: 2em;
+	text-align: center;
+	padding: 5px;
+}
+p, li {
+	font-size: 0.8em;
+}
+a {
+	text-decoration: none;
+	color:rgba(96,96,96,1.00);
+}
+a:hover{
+	color: white;
+	text-shadow: -2px 2px 5px #000, -2px 2px 3px #000, -2px 2px 3px #000;
+}
+ul{
+	margin-left: 25px;
+	list-style-image:url(bulletmoon.png);
+}
+.list{
+	width: 250px;
+	border-style: double;
+	border-width: medium;
+	margin: 5px;
+	float:left;
+	background:rgba(248,255,255,1.00);
+}
+br{
+	display: block;
+	content: "";
+	margin-top: 7px;
+}
+h1{
+	font-size: 2em;
+	padding: 20px;
+}
+h2{
+	font-size: 1.3em;
+	padding: 10px;
+}
+h3{
+	padding: 5px;
+}
+h4{
+	padding: 0 5px;
+}
+h5{
+	padding: 5px;
+}
+p{
+	padding: 0 5px;
+}
+
+#aboutme{
+	background-image:url(serenity.png);
+	background-size: 250px;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-position:bottom;
+	
+	
+}
+@media (max-width: 850px){
+	#content{
+		width: 550px;
+	}
+}
+
+@media (max-width: 550px){
+	#content{
+		width: 280px;
+	}
+}
