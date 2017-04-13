@@ -116,14 +116,3 @@ p{
 
 
 
-@media (max-width: 850px){
-	#content{
-		width: 550px;
-	}
-}
-
-@media (max-width: 550px){
-	#content{
-		width: 280px;
-	}
-}
