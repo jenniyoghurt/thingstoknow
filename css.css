@@ -114,5 +114,63 @@ p{
 	margin-top: 230px;
 }
 
+#note{
+	right: 50%;
+	margin-right: -80px;
+	margin-top: 220px;
+	width: 100px;
+}
 
 
+@media (max-width: 850px){
+	.list  {
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	#aboutme{
+		margin: 0 auto;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		max-width: 95%;
+	}
+	#important{
+		margin: 0 auto;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		max-width: 95%;
+	}
+	#note{
+		margin: 0 auto;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		max-width: 95%;
+	}
+	#accounts{
+		margin: 0 auto;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		max-width: 95%;
+	}
+	#wanted{
+		margin: 0 auto;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		max-width: 95%;
+	}
+	#favourites{
+		margin: 0 auto;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		max-width: 95%;
+		margin-bottom: 10px;
+	}
+	
+}
