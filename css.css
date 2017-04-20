@@ -20,6 +20,7 @@ header {
 }
 #content{
 	margin: 0 auto;
+	padding-bottom: 10px;
 }
 p, li {
 	font-size: 0.75em;
@@ -41,7 +42,7 @@ ul{
 	border-style: double;
 	border-width: medium;
 	border-radius: 7px;
-	margin: 5px;
+	margin: 20px;
 	background:rgba(248,255,255,1.00);
 	position: absolute;
 }
@@ -121,6 +122,26 @@ p{
 	width: 100px;
 }
 
+#infp {
+	left: 50%;
+	margin-left: -100px;
+	margin-top: 940px;
+	width: 500px;
+}
+
+#desertArt{
+	width: 260px;
+	margin-top: 730px;
+	left: 50%;
+	margin-left: 140px;
+}
+
+#anju{
+	margin-top: 1030px;
+	right: 50%;
+	margin-right: 130px;
+}
+
 
 @media (max-width: 850px){
 	.list  {
@@ -129,48 +150,12 @@ p{
 		right: 0;
 		margin: 0 auto;
 	}
-	#aboutme{
+	#aboutme, #important, #note, #accounts, #wanted, #favourites, #infp, #desertArt, #anju{
 		margin: 0 auto;
 		margin-top: 10px;
 		left: 0;
 		right: 0;
 		max-width: 95%;
-	}
-	#important{
-		margin: 0 auto;
-		margin-top: 10px;
-		left: 0;
-		right: 0;
-		max-width: 95%;
-	}
-	#note{
-		margin: 0 auto;
-		margin-top: 10px;
-		left: 0;
-		right: 0;
-		max-width: 95%;
-	}
-	#accounts{
-		margin: 0 auto;
-		margin-top: 10px;
-		left: 0;
-		right: 0;
-		max-width: 95%;
-	}
-	#wanted{
-		margin: 0 auto;
-		margin-top: 10px;
-		left: 0;
-		right: 0;
-		max-width: 95%;
-	}
-	#favourites{
-		margin: 0 auto;
-		margin-top: 10px;
-		left: 0;
-		right: 0;
-		max-width: 95%;
-		margin-bottom: 10px;
-	}
-	
+		display: block;
+	}	
 }
