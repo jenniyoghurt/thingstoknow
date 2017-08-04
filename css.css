@@ -5,7 +5,8 @@
 	padding: 0;
 }
 body {
-	font-family: 'Oxygen Mono', monospace;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.25em;
 	background:rgba(252,255,255,1.00);
 }
 header {
@@ -24,6 +25,7 @@ header {
 }
 p, li {
 	font-size: 0.75em;
+	padding: 1px;
 }
 a {
 	text-decoration: none;
@@ -102,6 +104,14 @@ p{
 	width: 100px;
 }
 
+#acquiredHitsugaya{
+	position: absolute;
+	z-index: 1000;
+	margin-top: 650px;
+	right: 50%;
+	margin-right: 220px;
+}
+
 #important{
 	left: 50%;
 	width: 450px;
@@ -112,7 +122,7 @@ p{
 #favourites{
 	left: 50%;
 	margin-left: 130px;
-	margin-top: 230px;
+	margin-top: 210px;
 }
 
 #note{
@@ -158,4 +168,10 @@ p{
 		max-width: 95%;
 		display: block;
 	}	
+	#acquiredHitsugaya{
+		margin: 0 auto;
+		margin-top: 260px;
+		right: 0;
+		left: 0;
+	}
 }
