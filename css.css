@@ -17,7 +17,7 @@ header {
 }
 #version{
 	color: rgba(255,255,255,0.80);
-	font-size: 5em;
+	font-size: 0.6em;
 }
 #content{
 	margin: 0 auto;
@@ -183,25 +183,5 @@ p{
 	.body {
 		font-size: 150%;
 		background: blue;
-	}
-	.list  {
-		position: relative;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-	}
-	#aboutme, #important, #note, #accounts, #wanted, #favourites, #infp, #desertArt, #anju{
-		margin: 0 auto;
-		margin-top: 10px;
-		left: 0;
-		right: 0;
-		max-width: 95%;
-		display: block;
-	}	
-	#acquiredHitsugaya{
-		margin: 0 auto;
-		margin-top: 260px;
-		right: 0;
-		left: 0;
 	}
 }
