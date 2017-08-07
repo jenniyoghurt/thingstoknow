@@ -203,7 +203,9 @@ p{
 	#wanted{ 
 		width: 30%; 
 		font-size: 1.6em;
-		align-content: center;
+	}
+	#wanted img {
+		width: 10em;
 	}
 	#favourites{ width: 70%; }
 	#infp{ width: 95%; }
