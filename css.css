@@ -206,6 +206,7 @@ p{
 	}
 	#wanted img {
 		width: 3em;
+		margin: 0 auto;
 	}
 	#favourites{ width: 70%; }
 	#infp{ width: 95%; }
