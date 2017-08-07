@@ -154,9 +154,6 @@ p{
 
 
 @media only screen and (max-width: 850px){
-	body {
-		background: green;
-	}
 	.list  {
 		position: relative;
 		left: 0;
@@ -180,9 +177,8 @@ p{
 }
 
 @media only screen and (max-device-width: 450px){
-	.body {
-		font-size: 3em;
-		background: blue;
+	body {
+		font-size: 2em;
 	}
 	.list  {
 		position: relative;
