@@ -178,7 +178,10 @@ p{
 
 @media only screen and (max-device-width: 450px){
 	body {
-		font-size: 2em;
+		font-size: 2.5em;
+	}
+	header{
+		width: 200%;
 	}
 	.list  {
 		position: relative;
@@ -192,7 +195,6 @@ p{
 		left: 0;
 		right: 0;
 		max-width: 95%;
-		min-width: 70%;
 		display: block;
 	}	
 	#acquiredHitsugaya{
