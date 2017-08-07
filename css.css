@@ -195,9 +195,15 @@ p{
 	}	
 	#aboutme { width: 80%; }
 	#important { width: 95%; }
-	#note { width: 50%; }
+	#note { 
+		width: 50%; 
+		font-size: 4em;
+	}
 	#accounts{ width: 85%; }
-	#wanted{ width: 30%; }
+	#wanted{ 
+		width: 30%; 
+		font-size: 4em;
+	}
 	#favourites{ width: 70%; }
 	#infp{ width: 95%; }
 	#desertArt{ width: 75%; }
