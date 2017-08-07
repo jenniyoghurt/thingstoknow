@@ -182,7 +182,7 @@ p{
 @media only screen and (max-device-width: 450px){
 	.body {
 		font-size: 150%;
-		background: black;
+		background: blue;
 	}
 	.list  {
 		position: relative;
