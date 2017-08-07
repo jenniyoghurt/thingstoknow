@@ -181,7 +181,27 @@ p{
 
 @media only screen and (max-device-width: 450px){
 	.body {
-		font-size: 150%;
+		font-size: 3em;
 		background: blue;
+	}
+	.list  {
+		position: relative;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	#aboutme, #important, #note, #accounts, #wanted, #favourites, #infp, #desertArt, #anju{
+		margin: 0 auto;
+		margin-top: 10px;
+		left: 0;
+		right: 0;
+		max-width: 95%;
+		display: block;
+	}	
+	#acquiredHitsugaya{
+		margin: 0 auto;
+		margin-top: 260px;
+		right: 0;
+		left: 0;
 	}
 }
