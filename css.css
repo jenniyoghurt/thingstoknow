@@ -197,12 +197,12 @@ p{
 	#important { width: 95%; }
 	#note { 
 		width: 50%; 
-		font-size: 4em;
+		font-size: 2em;
 	}
 	#accounts{ width: 85%; }
 	#wanted{ 
 		width: 30%; 
-		font-size: 4em;
+		font-size: 2em;
 	}
 	#favourites{ width: 70%; }
 	#infp{ width: 95%; }
