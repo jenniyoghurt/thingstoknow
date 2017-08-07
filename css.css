@@ -197,7 +197,7 @@ p{
 	#important { width: 95%; }
 	#note { 
 		width: 50%; 
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 	#accounts{ width: 85%; }
 	#wanted{ 
@@ -209,8 +209,14 @@ p{
 		margin: 0 auto;
 		display: block;
 	}
-	#favourites{ width: 70%; }
-	#infp{ width: 95%; }
+	#favourites{ 
+		width: 70%; 
+		font-size: 1.2em;
+	}
+	#infp{ 
+		width: 95%; 
+		font-size: 0.8em;
+	}
 	#desertArt{ width: 75%; }
 	#anju{ width: 85%; }
 	#acquiredHitsugaya{
