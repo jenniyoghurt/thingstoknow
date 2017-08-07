@@ -191,10 +191,17 @@ p{
 		margin-top: 10px;
 		left: 0;
 		right: 0;
-		max-width: 95%;
-		min-width: 50%;
 		display: block;
 	}	
+	#aboutme { width: 80%; }
+	#important { width: 95%; }
+	#note { width: 50%; }
+	#accounts{ width: 85%; }
+	#wanted{ width: 30%; }
+	#favourites{ width: 70%; }
+	#infp{ width: 95%; }
+	#desertArt{ width: 75%; }
+	#anju{ width: 85%; }
 	#acquiredHitsugaya{
 		margin: 0 auto;
 		margin-top: 260px;
