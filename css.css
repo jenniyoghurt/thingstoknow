@@ -154,6 +154,9 @@ p{
 
 
 @media only screen and (max-width: 850px){
+	body {
+		background: green;
+	}
 	.list  {
 		position: relative;
 		left: 0;
