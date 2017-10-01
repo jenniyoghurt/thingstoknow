@@ -182,7 +182,8 @@
     </div>
     
     <script>
-		if(document.documentElement.clientWidth < 850){
+		var isMobile = window.matchMedia("only screen and (max-device-width: 450px");
+		if((document.documentElement.clientWidth < 850) | isMobile){
 			document.getElementById("hintToggle").style.visibility = "visible";
 			$( "#acquiredHitsugaya" ).toggle();
 			$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
