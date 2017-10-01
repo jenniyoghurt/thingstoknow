@@ -12,38 +12,45 @@
 
 	<header>
     	<p id="version">vers. 1.5</p>
+        <p id="hintToggle">tap the heading to toggle a box!</p>
     	<h1>♥ jenyoyo</h1>
         <script type="text/javascript" src="https://ko-fi.com/widgets/widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Buy me a Coffee', '#2e2e2e', 'A03140BN');kofiwidget2.draw();</script> 
+          <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     </header>
     
     <div id="content">
         	<div id="aboutme" class="list">
-        	<h2>about me</h2>
+        	<h2 id="aboutmeTitle">about me</h2>
+            <div id="aboutmeContent">
             <hr>
-            <br>
-        	<ul>
-            <li>jenni, jenyoyo, yoyo, ...</li>
-            <li>21</li>
-            <li>german</li>
-            <li>languages: german, english, ?? french, ?? latin</li>
-            <li>asexual spectrum</li>
-            <li>cis fem</li>
-            <li>i (used to) swim</li>
-            <li>i draw a lot but don't finish half the pieces i start</li>
-            <li>ravenclaw</li>
-            <li>i often travel to gigs that are very far away from where i live because there's no gigs where i live (and i love travelling)</li>
-           
-            </ul>
+                <br>
+                <ul>
+                <li>jenni, jenyoyo, yoyo, ...</li>
+                <li>21</li>
+                <li>german</li>
+                <li>languages: german, english, ?? french, ?? latin</li>
+                <li>asexual spectrum</li>
+                <li>cis fem</li>
+                <li>i (used to) swim</li>
+                <li>i draw a lot but don't finish half the pieces i start</li>
+                <li>ravenclaw</li>
+                <li>i often travel to gigs that are very far away from where i live because there's no gigs where i live (and i love travelling)</li>
+               
+                </ul>
+            </div>
         </div>
         
           <div id="important" class="list">
-        <h2>important!!</h2>
+        <h2 id="importantTitle">important!!</h2>
+        <div id="importantContent">
         <hr>
-        <br>
-        <h5>i get uncomfortable around sexual content, how much varies. generally i'm fine with tweets and stuff but please don't make me talk about it!</h5>
-        <ul>
-	<li>if you need me to tag or avoid subjects on any of my accounts please feel free to tell me and i'll do my best!</li>
-	</ul>
+            <br>
+            <h5>i get uncomfortable around sexual content, how much varies. generally i'm fine with tweets and stuff but please don't make me talk about it!</h5>
+            <ul>
+            <li>if you need me to tag or avoid subjects on any of my accounts please feel free to tell me and i'll do my best!</li>
+            </ul>
+        </div>
         </div>
         
         <img alt="break. digital art piece" src="desertArt.png" class="list" id="desertArt">
@@ -56,7 +63,8 @@
        
         
         <div id="accounts" class="list">
-        	<h2>accounts</h2>
+        	<h2 id="accountsTitle">accounts</h2>
+            <div id="accountsContent">
             <hr>
             <br>
         	<h3>~~twitter~~</h3>
@@ -83,26 +91,31 @@
             <h4><a href="http://www.reddit.com/u/jenyoyo">reddit: jenyoyo</a></h4>  
             <h4><a href="http://aminoapps.com/page/art/3636387/jenyoyo">art amino: jenyoyo</a></h4>
             <p>(other aminos as well, currently inactive)</p>
+            </div>
         </div>
         
-        <img id="acquiredHitsugaya" alt="acquired" src="acquired.png">
+        
         <div id="wanted" class="list">
-        	<h2>WANTED</h2>
+        	<h2 id ="wantedTitle">WANTED</h2>
+            <img id="acquiredHitsugaya" alt="acquired" src="acquired.png">
+            <div id="wantedContent">
             <hr>
             <br>
         	<ul>
-           		<img alt="Constellation Maki" src="maki.png">
+           		<img alt="Constellation Maki" src="maki.png" class="chara">
             	<li>Constellation Maki</li>
-                <img alt="Hitsugaya, Fullbring version" src="hitsugaya.png">
+                <img alt="Hitsugaya, Fullbring version" class ="chara" src="hitsugaya.png">
             	<li>Fullbring Hitsugaya on my global account</li>
-                <img alt="Jellyfish Yohane (Job version Yohane)" src="yohane.png">
+                <img class="chara" alt="Jellyfish Yohane (Job version Yohane)" src="yohane.png">
                 <li>Jellyfish Yohane</li>
               </ul>
+              </div>
         </div>
         
       
         <div id="favourites" class="list">
-        <h2>favourites</h2>
+        <h2 id="favouritesTitle">favourites</h2>
+        <div id="favouritesContent">
         <hr>
         <br>
         <h3>~~fictional characters~~</h3>
@@ -126,11 +139,12 @@
         <li>sohn</li>
         </ul>
         <p>and loads loads more!</p>
-        
+        </div>
         </div>
         
         <div class="list" id="infp">
-        	<h2>INFP</h2>
+        	<h2 id="infpTitle">INFP</h2>
+            <div id="infpContent">
             <hr>
             <br>
             <h3>~~strengths~~</h3>
@@ -160,11 +174,55 @@
             </ul>
             <h3>to be fair...</h3>
             <p>not all of these apply to me and i don't think every person fits into one of 16 personalities as the mbti-test suggests. it does come pretty close though!</p>
+            </div>
         </div>
         
         <img alt="maaka anju drawing" src="anju.png" class="list" id="anju"> 
         
     </div>
+    
+    <script>
+		if($(window).width() <= 850){
+			document.getElementById("hintToggle").style.visibility = "visible";
+			$( "#acquiredHitsugaya" ).toggle();
+			$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
+			$( "#accountsContent" ).slideToggle( "slow", "swing");
+			$( "#wantedContent" ).slideToggle( "slow", "swing");
+			$( "#favouritesContent" ).slideToggle( "slow", "swing");
+			$( "#infpContent" ).slideToggle( "slow", "swing");
+			
+			$( "#aboutmeTitle" ).click(function() {
+				$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
+			});
+			
+			$( "#importantTitle" ).click(function() {
+				$( "#importantContent" ).slideToggle( "slow", "swing");
+			});
+			
+			$( "#accountsTitle" ).click(function() {
+				$( "#accountsContent" ).slideToggle( "slow", "swing");
+			});
+			
+			$( "#wantedTitle" ).click(function() {
+				if($("#wantedContent").is(":visible")){
+					$( "#acquiredHitsugaya" ).toggle();
+					$( "#wantedContent" ).slideToggle( "slow", "swing");
+				} else {
+					$( "#wantedContent" ).slideToggle( "slow", "swing", function(){
+						$( "#acquiredHitsugaya" ).toggle();
+					});
+				}
+			});
+		
+			$( "#favouritesTitle" ).click(function() {
+				$( "#favouritesContent" ).slideToggle( "slow", "swing");
+			});
+			
+			$( "#infpTitle" ).click(function() {
+				$( "#infpContent" ).slideToggle( "slow", "swing");
+			});
+		}
+	</script>
     
 </body>
 </html>

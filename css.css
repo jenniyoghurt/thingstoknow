@@ -19,6 +19,11 @@ header {
 	color: rgba(255,255,255,0.80);
 	font-size: 0.6em;
 }
+#hintToggle{
+	color: rgba(255,255,255,0.80);
+	position: absolute;
+	visibility: hidden;
+}
 #content{
 	margin: 0 auto;
 	padding-bottom: 10px;
@@ -99,7 +104,7 @@ p{
 	margin-top: 400px;
 }
 
-#wanted img {
+#wanted .chara {
 	border-radius: 100%;
 	width: 100px;
 }
@@ -107,9 +112,9 @@ p{
 #acquiredHitsugaya{
 	position: absolute;
 	z-index: 1000;
-	margin-top: 650px;
+	margin-top: 220px;
 	right: 50%;
-	margin-right: 220px;
+	margin-right: -85px;
 }
 
 #important{
@@ -154,6 +159,9 @@ p{
 
 
 @media only screen and (max-width: 850px){
+	h1{
+		padding-bottom: 10px;
+	}
 	.list  {
 		position: relative;
 		left: 0;
@@ -169,10 +177,10 @@ p{
 		display: block;
 	}	
 	#acquiredHitsugaya{
-		margin: 0 auto;
-		margin-top: 260px;
 		right: 0;
-		left: 0;
+		margin: 0 auto;
+		margin-top: 220px;
+		left: -15px;
 	}
 }
 
@@ -204,7 +212,7 @@ p{
 		width: 30%; 
 		font-size: 1.6em;
 	}
-	#wanted img {
+	#wanted .chara {
 		width: 3em;
 		margin: 0 auto;
 		display: block;
