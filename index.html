@@ -207,8 +207,8 @@
     }
 };
 
-		document.getElementById("hintToggle").style.visibility = "visible";
 		if((document.documentElement.clientWidth < 850) || isMobile.any()){
+			document.getElementById("hintToggle").style.visibility = "visible";
 			$( "#acquiredHitsugaya" ).toggle();
 			$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
 			$( "#accountsContent" ).slideToggle( "slow", "swing");
