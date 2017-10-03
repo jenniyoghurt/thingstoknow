@@ -182,23 +182,44 @@
     </div>
     
     <script>
-		//var isMobile = window.matchMedia("only screen and (max-device-width: 850px");
-		//if((document.documentElement.clientWidth < 850) | isMobile){
+	var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
 		document.getElementById("hintToggle").style.visibility = "visible";
-		$( "#acquiredHitsugaya" ).toggle();
+		/*var isMobile = ($.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())));*/
+		if((document.documentElement.clientWidth < 850) || isMobile.any()){
+		/*$( "#acquiredHitsugaya" ).toggle();
 		$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
 		$( "#accountsContent" ).slideToggle( "slow", "swing");
 		$( "#wantedContent" ).slideToggle( "slow", "swing");
 		$( "#favouritesContent" ).slideToggle( "slow", "swing");
-		$( "#infpContent" ).slideToggle( "slow", "swing");
-		if(document.documentElement.clientWidth > 850){
+		$( "#infpContent" ).slideToggle( "slow", "swing");*/
+		//if(document.documentElement.clientWidth > 850){
 			$( "#acquiredHitsugaya" ).toggle();
 			$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
 			$( "#accountsContent" ).slideToggle( "slow", "swing");
 			$( "#wantedContent" ).slideToggle( "slow", "swing");
 			$( "#favouritesContent" ).slideToggle( "slow", "swing");
 			$( "#infpContent" ).slideToggle( "slow", "swing");
-		}
+		//}
 			
 			$( "#aboutmeTitle" ).click(function() {
 				$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
@@ -230,7 +251,7 @@
 			$( "#infpTitle" ).click(function() {
 				$( "#infpContent" ).slideToggle( "slow", "swing");
 			});
-		//}
+		}
 	</script>
     
 </body>
