@@ -182,15 +182,23 @@
     </div>
     
     <script>
-		var isMobile = window.matchMedia("only screen and (max-device-width: 850px");
-		if((document.documentElement.clientWidth < 850) | isMobile){
-			document.getElementById("hintToggle").style.visibility = "visible";
+		//var isMobile = window.matchMedia("only screen and (max-device-width: 850px");
+		//if((document.documentElement.clientWidth < 850) | isMobile){
+		document.getElementById("hintToggle").style.visibility = "visible";
+		$( "#acquiredHitsugaya" ).toggle();
+		$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
+		$( "#accountsContent" ).slideToggle( "slow", "swing");
+		$( "#wantedContent" ).slideToggle( "slow", "swing");
+		$( "#favouritesContent" ).slideToggle( "slow", "swing");
+		$( "#infpContent" ).slideToggle( "slow", "swing");
+		if(document.documentElement.clientWidth > 850){
 			$( "#acquiredHitsugaya" ).toggle();
 			$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
 			$( "#accountsContent" ).slideToggle( "slow", "swing");
 			$( "#wantedContent" ).slideToggle( "slow", "swing");
 			$( "#favouritesContent" ).slideToggle( "slow", "swing");
 			$( "#infpContent" ).slideToggle( "slow", "swing");
+		}
 			
 			$( "#aboutmeTitle" ).click(function() {
 				$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
@@ -222,7 +230,7 @@
 			$( "#infpTitle" ).click(function() {
 				$( "#infpContent" ).slideToggle( "slow", "swing");
 			});
-		}
+		//}
 	</script>
     
 </body>
