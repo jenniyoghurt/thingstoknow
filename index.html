@@ -100,6 +100,7 @@
         <div id="wanted" class="list">
         	<h2 id ="wantedTitle">WANTED</h2>
             <img id="acquiredHitsugaya" alt="acquired" src="acquired.png">
+            <img id="acquiredAdultHitsugaya" alt="acquired" src="acquired.png">
             <div id="wantedContent">
             <hr>
             <br>
@@ -210,6 +211,7 @@
 		if((document.documentElement.clientWidth < 850) || isMobile.any()){
 			document.getElementById("hintToggle").style.visibility = "visible";
 			$( "#acquiredHitsugaya" ).toggle();
+            $( "#acquiredAdultHitsugaya" ).toggle();
 			$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
 			$( "#accountsContent" ).slideToggle( "slow", "swing");
 			$( "#wantedContent" ).slideToggle( "slow", "swing");
@@ -231,10 +233,12 @@
 			$( "#wantedTitle" ).click(function() {
 				if($("#wantedContent").is(":visible")){
 					$( "#acquiredHitsugaya" ).toggle();
+					$( "#acquiredAdultHitsugaya" ).toggle();
 					$( "#wantedContent" ).slideToggle( "slow", "swing");
 				} else {
 					$( "#wantedContent" ).slideToggle( "slow", "swing", function(){
 						$( "#acquiredHitsugaya" ).toggle();
+						$( "#acquiredAdultHitsugaya" ).toggle();
 					});
 				}
 			});

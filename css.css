@@ -6,7 +6,7 @@
 }
 body {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.25em;
+	font-size: 20px;
 	background:rgba(252,255,255,1.00);
 }
 header {
@@ -113,6 +113,14 @@ p{
 	position: absolute;
 	z-index: 1000;
 	margin-top: 220px;
+	right: 50%;
+	margin-right: -85px;
+}
+
+#acquiredAdultHitsugaya{
+	position: absolute;
+	z-index: 1000;
+	margin-top: 360px;
 	right: 50%;
 	margin-right: -85px;
 }
