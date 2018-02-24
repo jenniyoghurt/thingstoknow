@@ -121,6 +121,7 @@ br{
     border-style: solid;
     border-width: 1px;
     width: 200px;
+    background-color: rgba(255, 250, 245, 1);
 }
 h3 {
     text-align: center;
