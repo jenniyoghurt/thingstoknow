@@ -12,6 +12,7 @@ body {
 	font-size: 22px;
 	background-color: blanchedalmond;
     color: darksalmon;
+    overflow-y: scroll;
 }
 #version{
 	font-size: 12px;
