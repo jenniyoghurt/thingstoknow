@@ -1,3 +1,5 @@
+var popupOpen = ""
+
 function hideAll(except) {
     if ((except != "home") && ($("#homeBox").is(":visible"))) {
         $( "#homeBox" ).slideToggle( "slow", "swing" );
@@ -20,15 +22,24 @@ function hideAll(except) {
     if ((except != "kofi") && ($("#kofiBox").is(":visible"))) {
         $( "#kofiBox" ).slideToggle( "slow", "swing" );
     }
+    
+    $('.button').css('background-color', 'rgba(252, 245, 238, 1)');
+    
+    if(popupOpen != ""){
+        closePopup(popupOpen)
+    }
 }
     
 function makeVis(box) {
     var str1 = "#"
-    var str2 = "Box"
-    var str = str1.concat(box.concat(str2))
+    var str = str1.concat(box.concat("Box"))
     if(!($(str).is(":visible"))) {
         $(str).slideToggle( "slow", "swing" );
     }
+    
+    var buttonStr = str1.concat(box.concat("Button"));
+    $(buttonStr).style; //findet das element aber style funktioniert nicht vllt wegen jqery
+    $(buttonStr).css('background-color', 'rgba(255, 253, 250, 1)');
 }
     
 function hideAndShow(box) {
@@ -72,6 +83,7 @@ function popup(card) {
     var str2 = str.concat(card)
     var popup = str2.concat("Popup")
     $(popup).slideDown( "slow", "swing");
+    popupOpen = card;
 }
 
 function closePopup(card) {
