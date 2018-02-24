@@ -4,254 +4,229 @@
 <meta charset="utf-8">
 <title>yoyo's lists</title>
 <link rel="stylesheet" type="text/css" href="css.css">
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,600" rel="stylesheet">
 
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
 </head>
 
 <body>
 
 	<header>
-    	<p id="version">vers. 2.0</p>
-        <p id="hintToggle">tap the heading to toggle a box!</p>
-    	<h1>♥ jenyoyo</h1>
-        <script type="text/javascript" src="https://ko-fi.com/widgets/widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Buy me a Coffee', '#2e2e2e', 'A03140BN');kofiwidget2.draw();</script> 
-          <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+    	
     </header>
     
+    <p id="version">vers. 3.0</p>
+    
     <div id="content">
-        	<div id="aboutme" class="list">
-        	<h2 id="aboutmeTitle">about me</h2>
-            <div id="aboutmeContent">
-            <hr>
-                <br>
-                <ul>
-                <li>jenni, jenyoyo, yoyo, ...</li>
-                <li>21</li>
-                <li>german</li>
-                <li>languages: german, english, ?? french, ?? latin</li>
-                <li>asexual spectrum</li>
-                <li>cis fem</li>
-                <li>i (used to) swim</li>
-                <li>i draw a lot but don't finish half the pieces i start</li>
-                <li>ravenclaw</li>
-                <li>i often travel to gigs that are very far away from where i live because there's no gigs where i live (and i love travelling)</li>
-               <li>making art is expensive, if you ever feel like supporting me i'd appreciate a <a href="https://ko-fi.com/jenyoyo">ko-fi!</a></li>
-                </ul>
-            </div>
-        </div>
         
-          <div id="important" class="list">
-        <h2 id="importantTitle">important!!</h2>
-        <div id="importantContent">
-        <hr>
+        <h1>jenyoyo</h1>
+        
+        
+        <div id="maki1Popup" class="popup">
+            <p class="close" onclick="closePopup('maki1')">close</p>
+            <img class="wanted" alt="Constellation Maki" src="cards/maki1.png">
+            <h4>constellation maki</h4>
             <br>
-            <h5>i get uncomfortable around sexual content, how much varies. generally i'm fine with tweets and stuff but please don't make me talk about it!</h5>
-            <ul>
-            <li>if you need me to tag or avoid subjects on any of my accounts please feel free to tell me and i'll do my best!</li>
-            </ul>
-        </div>
+            <p>my absolute dream card in sif. started when i really needed a pure ur and i love galaxy themes</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>wanted</p>
         </div>
         
-        <img alt="break. digital art piece" src="desertArt.png" class="list" id="desertArt">
+        <div id="hitsugaya1Popup" class="popup">
+            <p class="close" onclick="closePopup('hitsugaya1')">close</p>
+            <img class="acquired" alt="Diamond Dust Rebellion Hitsugaya" src="cards/hitsugaya1.png">
+            <h4>diamond dust rebellion hitsugaya (movie 2)</h4>
+            <br>
+            <p>seeing as the 2nd bleach movie plot was written because hitsugaya is such a popular character i was pretty sure he'd get a smAshing character for it and klab did not disappoint</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>acquired</p>
+        </div>
         
-    	<div id="note" class="list">
-        	<h3>note:</h3>
-            <p>worrying means you suffer twice</p>
+        <div id="yohane1Popup" class="popup">
+            <p class="close" onclick="closePopup('yohane1')">close</p>
+            <img class="acquired" alt="Jellyfish Yohane" src="cards/yohane1.png">
+            <h4>jellyfish yohane</h4>
+            <br>
+            <p>my favourite yohane in the game even though it's not my favourite set. underwater things!! are everything</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>seal idolized on my en (side), wanted on my main</p>
+        </div>
+        
+        <div id="aya1Popup" class="popup">
+            <p class="close" onclick="closePopup('aya1')">close</p>
+            <img class="wanted" alt="Limited Aya" src="cards/aya1.png">
+            <h4>Limited Aya</h4>
+            <br>
+            <p>sad story of me saving over 30k stars, in the end spending about 40k on a gacha and not getting a limited card. not doing that again but also not giving up. waiting for her return and putting a few stars aside.</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>wanted</p>
+        </div>
+        
+        <div id="hitsugaya2Popup" class="popup">
+            <p class="close" onclick="closePopup('hitsugaya2')">close</p>
+            <img class="acquired" alt="Thousand Year Blood War Hitsugaya" src="cards/hitsugaya2.png">
+            <h4>thousand year blood war hitsugaya</h4>
+            <br>
+            <p>my son, but older</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>acquired</p>
+        </div>
+        
+        <div id="Popup" class="popup">
+            <p class="close" onclick="closePopup('')">close</p>
+            <img class="" alt="" src="cards/.png">
+            <h4></h4>
+            <br>
+            <p></p>
+            <br>
+            <p class="bold">status:</p>
+            <p></p>
+        </div>
+        
+        <!-- BUTTONS -->
+        <div id="buttons">
+            <img alt="home" src="buttons/home.png" class="button" id="homeButton" onclick="showHome()">
+            <img alt="profile" src="buttons/profile.png" class="button" id="homeButton" onclick="showProfile()">
+            <img alt="favourites" src="buttons/favs.png" class="button" id="favsButton" onclick="showFavs()">
+            <img alt="notes" src="buttons/notes.png" class="button" id="notesButton" onclick="showNotes()">
+            <img alt="asterisk" src="buttons/asterisk.png" class="button" id="asteriskButton" onclick="showAsterisk()">
+            <img alt="art" src="buttons/art.png" class="button" id="artButton" onclick="showArt()">
+            <img alt="kofi" src="buttons/kofi.png" class="button" id="kofiButton" onclick="showKofi()">
         </div>
 
-       
-        
-        <div id="accounts" class="list">
-        	<h2 id="accountsTitle">accounts</h2>
-            <div id="accountsContent">
+        <div id="homeBox" class="box">
+            <h3>home</h3>
+            <p>hello!</p>
+            <p>i've put together a few pieces of information you might find useful if you've come across one of my accounts.</p>
+            <p>the only thing i'd really want you to know is that depending on the context sexual content can make me fairly uncomfortable;;</p>
+            <p>if there's anything you want me to tag for you i'd be happy to do so! you can leave a message on my tumblr if you'd like to stay anon, i don't use it currently but notifications are still on.</p>
+            <br>
             <hr>
             <br>
-        	<h3>~~twitter~~</h3>
-            <h4><a href="http://www.twitter.com/jenyoyo">@jenyoyo</a></h4>
-            <p>main account; art and band and general things</p>
-            <h4><a href="http://www.twitter.com/yoyohane/">@yoyohane</a></h4>
-            <p>ll:sif, bandori, bleach brave souls and other manga / anime stuff</p>
+            <h4>accounts</h4>
+            <a class="bold" href="http://twitter.com/jenyoyo">&gt; twitter.com/jenyoyo</a>
+            <p>main twitter, music & art</p>
             <br>
-            <h3>~~instagram~~</h3>
-            <h4><a href="http://www.instagram.com/jenyoyo">jenyoyo</a></h4>
-            <p>for the art</p>
-            <h4><a href="http://www.instagram.com/vecxrdia">vecxrdia</a></h4>
-            <p>for the rest</p>
+            <a class="bold" href="http://twitter.com/yoyohane">&gt; twitter.com/yoyohane</a>
+            <p>manga/anime/gacha game twitter</p>
             <br>
-            <h3>~~tumblr~~</h3>
-            <h4><a href="http://488nm.tumblr.com">488nm.tumblr.com</a></h4>
-            <p>art (on hiatus)</p>
-            <h4><a href="http://jenyoyo.tumblr.com">jenyoyo.tumblr.com</a></h4>
-            <p>personal</p>
-            <h4><a href="http://vecxrdia.tumblr.com">vecxrdia.tumblr.com</a></h4>
-            <p>technically main account but kind of inactive colour matching aesthetics thing</p>
+            <a class="bold" href="http://instagram.com/jenyoyo">&gt; instagram.com/jenyoyo</a>
+            <p>art</p>
             <br>
-            <h4><a href="https://www.youtube.com/channel/UCjR1ZjnEd4Ip8FuuMzo90Eg">youtube: jenyoyo</a></h4>
-            <h4><a href="http://www.reddit.com/u/jenyoyo">reddit: jenyoyo</a></h4>  
-            <h4><a href="http://aminoapps.com/page/art/3636387/jenyoyo">art amino: jenyoyo</a></h4>
-            <p>(other aminos as well, currently inactive)</p>
+            <a class="bold" href="http://instagram.com/vecxrdia">&gt; instagram.com/vecxrdia</a>
+            <p>private / personal</p>
             <br>
-            <p>if you want any gacha game ids, let me know!</p>
-            </div>
+            <a class="bold" href="http://488nm.tumblr.com">&gt; 488nm.tumblr.com</a>
+            <p>art - inactive but might have a comeback this year</p>
+            <br>
+            <a class="bold" href="http://jenyoyo.tumblr.com">&gt; jenyoyo.tumblr.com</a>
+            <p>personal - inactive but has occasional posts</p>
+            <br>
+            <a class="bold" href="http://vecxrdia.tumblr.com">&gt; vecxrdia.tumblr.com</a>
+            <p>main, with a lot of dust, inactive, probably forever</p>
+            <br>
+            <a class="bold" href="http:youtube.com/jenyoyo">&gt; youtube</a>
+        </div>
+
+        <div id="profileBox" class="box">
+            <h3>about me</h3>
+            <ul>
+                <li>jenni, jen, yoyo...</li>
+                <li>20.07.1996</li>
+                <li>german</li>
+                <li>languages: german, english, some french & latin</li>
+                <li>asexual spectrum</li>
+                <li>female</li>
+                <li>ravenclaw</li>
+                <li>i love travelling to gigs (there's no gigs where i live so i kind of have to)</li>
+                <li>i love swimming, used to do it regularly and v much want to get it back into my weekly routine</li>
+                <li>i play guitar to get away with sitting in my room and singing alone</li>
+                <li>i study computer science and enjoy most of it a lot</li>
+            </ul>
         </div>
         
-        
-        <div id="wanted" class="list">
-        	<h2 id ="wantedTitle">WANTED</h2>
-            <img id="acquiredHitsugaya" alt="acquired" src="acquired.png">
-            <img id="acquiredAdultHitsugaya" alt="acquired" src="acquired.png">
-            <div id="wantedContent">
+        <div id="favsBox" class="box">
+            <h3>favourites</h3>
+            <h4>music</h4>
+            <ul>
+                <li>nothing but thieves</li>
+                <li>local natives</li>
+                <li>coldplay</li>
+                <li>you me at six</li>
+                <li>bastille</li>
+                <li>&amp; so many more,,</li>
+            </ul>
             <hr>
-            <br>
-        	<ul>
-           		<img alt="Constellation Maki" src="maki.png" class="chara">
-            	<li>Constellation Maki</li>
-                <img alt="Hitsugaya, Fullbring version" class ="chara" src="hitsugaya.png">
-            	<li>Fullbring Hitsugaya on my global account</li>
-                <img class="chara" alt="Thousand Year Blood War Arc Hitsugaya" src ="adultHitsugaya.png">
-                <li>Adult / TYBW Hitsugaya</li>
-                <img class="chara" alt="Jellyfish Yohane (Job version Yohane)" src="yohane.png">
-                <li>Jellyfish Yohane</li>
-              </ul>
-              </div>
+            <h4>fictional characters</h4>
+            <ul>
+                <li>love live: &mu;'s: maki, eli, umi</li>
+                <li>love live: Aqours: yohane, you, kanan</li>
+                <li>bleach: hitsugaya toushirou, ichigo</li>
+                <li>bandori: aya, hina, sayo</li>
+                <li>cheeky vampire: anju</li>
+                <li>sailor moon: minako & michiru & hotaru</li>
+                <li>harry potter: luna lovegood</li>
+            </ul>  
         </div>
         
-      
-        <div id="favourites" class="list">
-        <h2 id="favouritesTitle">favourites</h2>
-        <div id="favouritesContent">
-        <hr>
-        <br>
-        <h3>~~fictional characters~~</h3>
-        <ul>
-        <li>love live: &mu;'s: maki, eli, umi</li>
-        <li>love live: Aqours: yohane, you, kanan</li>
-        <li>bleach: ichigo, hitsugaya toushirou</li>
-        <li>bandori: aya, hina, sayo</li>
-        <li>cheeky vampire: anju</li>
-        <li>sailor moon: minako & michiru & hotaru</li>
-        <li>harry potter: luna lovegood</li>
-        </ul>
-        <br>
-        <h3>~~bands/artists~~</h3>
-        <ul>
-        <li>nothing but thieves</li>
-        <li>local natives</li>
-        <li>coldplay</li>
-        <li>you me at six</li>
-        <li>bastille</li>
-        <li>sohn</li>
-        </ul>
-        <p>and loads loads more!</p>
-        </div>
-        </div>
-        
-        <div class="list" id="infp">
-        	<h2 id="infpTitle">INFP</h2>
-            <div id="infpContent">
+        <div id="notesBox" class="box">
+            <h3>notes</h3>
+            <p>worrying means you suffer twice</p>
             <hr>
-            <br>
-            <h3>~~strengths~~</h3>
-            <ul>
-            <li>idealistic</li>
-            <li>seek and value harmony</li>
-            <li>open-minded and flexible</li>
-            <li>very creative</li>
-            <li>passionate and energetic</li>
-            <li>dedicated and hard-working</li>
-            </ul>
-            <h3>~~weaknesses~~</h3>
-            <ul>
-            <li>too idealistic</li>
-            <li>too altruistic</li>
-            <li>impractical</li>
-            <li>dislike dealing with data</li>
-            <li>take things personally</li>
-            <li>difficult to get to know</li>
-            </ul>
-            <h3>~~other people that are supposed to be INFP (a small selection)~~</h3>
-            <ul>
-            <li>anne shirley of green gables, my sweet angel</li>
-            <li>virgil</li>
-            <li>william shakespeare</li>
-            <li>kurt cobain</li>
-            </ul>
-            <h3>to be fair...</h3>
-            <p>not all of these apply to me and i don't think every person fits into one of 16 personalities as the mbti-test suggests. it does come pretty close though!</p>
-            </div>
+            <p>we are like fireworks... rising, shining and finally scattering and fading.</p>
+            <p>so until that moment comes - when we vanish like fireworks...</p>
+            <p>let us sparkle brightly, always</p>
         </div>
         
-        <img alt="maaka anju drawing" src="anju.png" class="list" id="anju"> 
+        <div id="asteriskBox" class="box">
+            <img id="maki1" class="wanted" alt="Constellation Maki" src="cards/maki1.png" onclick="popup('maki1')">
+            <img id="hitsugaya1" class="acquired" alt="Diamond Dust Rebellion Hitsugaya" src="cards/hitsugaya1.png" onclick="popup('hitsugaya1')">
+            <img id="yohane1" class="acquired" alt="Jellyfish Yohane" src="cards/yohane1.png" onclick="popup('yohane1')">
+            <img id="aya1" class="wanted" alt="Limited Aya" src="cards/aya1.png" onclick="popup('aya1')">
+            <img id="hitsugaya2" class="acquired" alt="Thousand Year Blood War Hitsugaya" src="cards/hitsugaya2.png" onclick="popup('hitsugaya2')">
+            <img id="" class="" alt="" src="" onclick="popup('')">
+        </div>
+        
+        
+        <div id="artBox" class="box">
+            <img alt="Soda" src="art/soda.JPG">
+            <p>soda. oil on canvas</p>
+            <img alt="joe" src="art/joe.png">
+            <p>joe</p>
+        </div>
+        
+        <div id="kofiBox" class="box">
+            <h3>ko-fi?</h3>
+            <p>putting this here just in case cause why not? if you want to support me financially / make my month, you can send me a ko-fi here. if you do, feel free to let me know for a little thank you doodle if you like that kind of thing? idk i'm just hoping for a rich generous person to pop along some day</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <script type="text/javascript" src="https://ko-fi.com/widgets/widget_2.js"></script><script type="text/javascript">kofiwidget2.init('Buy me a Coffee', '#2e2e2e', 'A03140BN');kofiwidget2.draw();</script> 
+        </div>
         
     </div>
     
-    <script>
-	var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
-
-		if((document.documentElement.clientWidth < 850) || isMobile.any()){
-			document.getElementById("hintToggle").style.visibility = "visible";
-			$( "#acquiredHitsugaya" ).toggle();
-            $( "#acquiredAdultHitsugaya" ).toggle();
-			$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
-			$( "#accountsContent" ).slideToggle( "slow", "swing");
-			$( "#wantedContent" ).slideToggle( "slow", "swing");
-			$( "#favouritesContent" ).slideToggle( "slow", "swing");
-			$( "#infpContent" ).slideToggle( "slow", "swing");
-			
-			$( "#aboutmeTitle" ).click(function() {
-				$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
-			});
-			
-			$( "#importantTitle" ).click(function() {
-				$( "#importantContent" ).slideToggle( "slow", "swing");
-			});
-			
-			$( "#accountsTitle" ).click(function() {
-				$( "#accountsContent" ).slideToggle( "slow", "swing");
-			});
-			
-			$( "#wantedTitle" ).click(function() {
-				if($("#wantedContent").is(":visible")){
-					$( "#acquiredHitsugaya" ).toggle();
-					$( "#acquiredAdultHitsugaya" ).toggle();
-					$( "#wantedContent" ).slideToggle( "slow", "swing");
-				} else {
-					$( "#wantedContent" ).slideToggle( "slow", "swing", function(){
-						$( "#acquiredHitsugaya" ).toggle();
-						$( "#acquiredAdultHitsugaya" ).toggle();
-					});
-				}
-			});
-		
-			$( "#favouritesTitle" ).click(function() {
-				$( "#favouritesContent" ).slideToggle( "slow", "swing");
-			});
-			
-			$( "#infpTitle" ).click(function() {
-				$( "#infpContent" ).slideToggle( "slow", "swing");
-			});
-		}
-	</script>
+    
+    
     
 </body>
 </html>
+
+
+<!-- 
+<script>
+$( "#aboutmeTitle" ).click(function() {
+				$( "#aboutmeContent" ).slideToggle( "slow", "swing" );
+			});
+</script>
+ <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+-->
