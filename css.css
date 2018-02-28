@@ -139,6 +139,9 @@ h4 {
 .bold{
     font-weight: 600;
 }
+.mini{
+    font-size: 0.6em;
+}
 
 #artBox img {
     max-width: 430px;
