@@ -42,6 +42,7 @@ a {
 a:hover{
 	color: bisque;
 }
+
 ul{
 	margin-left: 25px;
 	list-style-image:url(bulletmoon.png);
@@ -151,6 +152,11 @@ h4 {
 }
 #artBox img+p{
     text-align: right;
+    font-size: 0.6em;
+}
+
+p a {
+    font-size: inherit;
 }
 
 #artBox img+p:not(:last-child){
