@@ -15,7 +15,7 @@ body {
     overflow-y: scroll;
 }
 #version{
-	font-size: 12px;
+	font-size: 0.5em;
     padding: 2px;
 }
 h1{
@@ -28,13 +28,13 @@ h1{
     padding-bottom: 30px;
 }
 p {
-	font-size: 16px;
+	font-size: 0.7em;
 }
 li{
-	font-size: 16px;
+	font-size: 0.7em;
 }
 a {
-    font-size: 16px;
+    font-size: 0.7em;
     color: darksalmon;
 	text-decoration: none;
     cursor: pointer;
@@ -81,10 +81,6 @@ br{
 #profileBox, #favsBox, #notesBox, #asteriskBox, #artBox, #kofiBox {
     display: none;
 }
-
-/*#homeBox, #profileBox, #favsBox, #notesBox, #artBox, #kofiBox {
-    display: none;
-}*/
 
 #asteriskBox img{
     width: 90px;
@@ -134,7 +130,7 @@ h4 {
 }
 .close{
     text-align: right;
-    font-size: 14px;
+    font-size: 0.6em;
     cursor: pointer;
 }
 .bold{
