@@ -38,8 +38,7 @@ function makeVis(box) {
     }
     
     var buttonStr = str1.concat(box.concat("Button"));
-    $(buttonStr).style; //findet das element aber style funktioniert nicht vllt wegen jqery
-    $(buttonStr).css('background-color', 'rgba(255, 253, 250, 1)');
+    $(buttonStr).css('background-color', 'rgba(255, 254, 252, 1)');
 }
     
 function hideAndShow(box) {
@@ -91,4 +90,17 @@ function closePopup(card) {
     var str2 = str.concat(card)
     var popup = str2.concat("Popup")
     $(popup).slideUp( "slow", "swing");
+}
+
+
+
+function filterGame(game) {
+    var str = '.';
+    gameClass = str.concat(game);
+    $(gameClass).toggle();
+    
+    var button = '#filter';
+    var buttonStr = button.concat(game);
+    
+    $(buttonStr).toggleClass("filterInactive");
 }

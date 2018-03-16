@@ -436,7 +436,7 @@
         
         <!-- BUTTONS -->
         <div id="buttons">
-            <img alt="home" src="buttons/home.png" class="button" id="homeButton" onclick="showHome()" style="background-color: rgba(255, 253, 250, 1)">
+            <img alt="home" src="buttons/home.png" class="button" id="homeButton" onclick="showHome()" style="background-color: rgba(255, 254, 252, 1)">
             <img alt="profile" src="buttons/profile.png" class="button" id="profileButton" onclick="showProfile()">
             <img alt="favourites" src="buttons/favs.png" class="button" id="favsButton" onclick="showFavs()">
             <img alt="notes" src="buttons/notes.png" class="button" id="notesButton" onclick="showNotes()">
@@ -532,6 +532,12 @@
         </div>
         
         <div id="asteriskBox" class="box">
+            <ul>
+                <li onclick="filterGame('sif')" id="filtersif">sif</li>
+                <li onclick="filterGame('ban')" id="filterban">bandori</li>
+                <li onclick="filterGame('bbs')" id="filterbbs">bbs</li>
+            </ul>
+            
             <img id="yohane7" class="wanted sif" alt="rock yohane" src="cards/yohane7.png" onclick="popup('yohane7')">
             <img id="hitsugaya1" class="acquired bbs" alt="Diamond Dust Rebellion Hitsugaya" src="cards/hitsugaya1.png" onclick="popup('hitsugaya1')">
             <img id="maki1" class="wanted sif" alt="Constellation Maki" src="cards/maki1.png" onclick="popup('maki1')">

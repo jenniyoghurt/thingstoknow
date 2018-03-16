@@ -64,15 +64,11 @@ br{
     border-radius: 100%;
     border-style: solid;
     border-width: 1px;
-    border-width: 1px;
     cursor: pointer;
-}
-#homeButton {
-    border-color: rgba(255, 254, 252, 1);
 }
 .box {
     width: 430px;
-    background-color: rgba(255, 250, 245, 1);
+    background-color: rgba(255, 249, 243, 1);
     padding: 30px;
     border-style: solid;
     border-color: darksalmon;
@@ -80,6 +76,25 @@ br{
 }
 #profileBox, #favsBox, #notesBox, #asteriskBox, #artBox, #kofiBox {
     display: none;
+}
+
+#asteriskBox .filterInactive{
+    background-color: rgba(255, 249, 243, 1);
+    border-width: 1px;
+    margin: 12px;
+}
+
+#asteriskBox li{
+    display: inline;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 254, 252, 1);
+    border-radius: 20px;
+}
+#asteriskBox ul{
+    padding-bottom: 20px;
+    margin: 0 auto;
 }
 
 #asteriskBox img{
