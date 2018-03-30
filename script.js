@@ -19,8 +19,8 @@ function hideAll(except) {
     if ((except != "art") && ($("#artBox").is(":visible"))) {
         $( "#artBox" ).slideToggle( "slow", "swing" );
     }
-    if ((except != "kofi") && ($("#kofiBox").is(":visible"))) {
-        $( "#kofiBox" ).slideToggle( "slow", "swing" );
+    if ((except != "playlist") && ($("#playlistBox").is(":visible"))) {
+        $( "#playlistBox" ).slideToggle( "slow", "swing" );
     }
     
     $('.button').css('background-color', 'rgba(252, 245, 238, 1)');
@@ -70,8 +70,8 @@ function showArt() {
     hideAndShow("art")
 }
 
-function showKofi() {
-    hideAndShow("kofi")
+function showPlaylist() {
+    hideAndShow("playlist")
 }
 
 
@@ -93,14 +93,57 @@ function closePopup(card) {
 }
 
 
+var filterSif = true;
+var filterBan = true;
+var filterBBS = true;
+
+function checkGameFilter(game){
+    if(game == 'sif') return filterSif;
+    if(game == 'ban') return filterBan;
+    if(game == 'bbs') return filterBBS;
+}
+
+function setGameFilter(game, value) {
+    if(game == 'sif') {
+        filterSif = value;
+    }
+    if(game == 'ban') {
+        filterBan = value;
+    }
+    if(game == 'bbs') {
+        filterBBS = value;
+    }
+}
+
+var filterAcq = true;
+var filterWanted = true;
 
 function filterGame(game) {
     var str = '.';
     gameClass = str.concat(game);
-    $(gameClass).toggle();
+    
+    if(checkGameFilter(game)) {
+        $(gameClass).hide();
+        setGameFilter(game, false);
+    } else {
+        $(gameClass).show();
+        setGameFilter(game, true);
+    }
+    
     
     var button = '#filter';
     var buttonStr = button.concat(game);
+    
+    $(buttonStr).toggleClass("filterInactive");
+}
+
+function filterStatus(status) {
+    var str = '.';
+    statusClass = str.concat(game);
+    $(statusClass).toggle();
+    
+    var button = '#filter';
+    var buttonStr = button.concat(status);
     
     $(buttonStr).toggleClass("filterInactive");
 }

@@ -74,7 +74,7 @@ br{
     border-color: darksalmon;
     border-width: 1px;
 }
-#profileBox, #favsBox, #notesBox, #asteriskBox, #artBox, #kofiBox {
+#profileBox, #favsBox, #notesBox, #asteriskBox, #artBox, #playlistBox {
     display: none;
 }
 
