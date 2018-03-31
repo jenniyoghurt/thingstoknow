@@ -78,9 +78,10 @@ function showPlaylist() {
 
 
 function popup(card) {
-    var str = "#"
-    var str2 = str.concat(card)
-    var popup = str2.concat("Popup")
+    hideAll("asterisk");
+    var str = "#";
+    var str2 = str.concat(card);
+    var popup = str2.concat("Popup");
     $(popup).slideDown( "slow", "swing");
     popupOpen = card;
 }
@@ -89,7 +90,7 @@ function closePopup(card) {
     var str = "#"
     var str2 = str.concat(card)
     var popup = str2.concat("Popup")
-    $(popup).slideUp( "slow", "swing");
+    $(popup).slideUp("swing");
 }
 
 
