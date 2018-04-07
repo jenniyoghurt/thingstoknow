@@ -184,14 +184,14 @@ hr{
 }
 
 @media only screen and (max-device-width: 450px){
-/*
+
 }
 
 @media (max-width: 1000px){
     h1{
         font-family: monospace;
     }
-*/
+
     body{
         font-size: 300%;
     }
@@ -220,6 +220,8 @@ hr{
     }
     .popup{
         width: 74%;
+        left: 0;
+        margin-left: 8%;
     }
     .popup img{
         width: 60%;
