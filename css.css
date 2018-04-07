@@ -184,7 +184,26 @@ hr{
 }
 
 @media only screen and (max-device-width: 450px){
+/*
+}
+
+@media (max-width: 700px){
     h1{
         font-family: monospace;
+    }
+*/    
+    #content{
+        max-width: 96%;
+    }
+    .box{
+        max-width: 90%;
+        padding: 5%;
+    }
+    #buttons {
+        margin: 0;
+    }
+    #buttons img {
+        margin: 1vw;
+        width: 6vw;
     }
 }
