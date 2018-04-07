@@ -193,10 +193,10 @@ hr{
     }
 */    
     #content{
-        max-width: 96%;
+        width: 96%;
     }
     .box{
-        max-width: 90%;
+        width: 90%;
         padding: 5%;
     }
     #buttons {
