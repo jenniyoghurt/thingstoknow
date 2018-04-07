@@ -187,7 +187,7 @@ hr{
 
 }
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
     h1{
         font-family: monospace;
     }
@@ -203,15 +203,30 @@ hr{
         padding: 5%;
     }
     #buttons {
-        margin: 0;
         margin: 0 auto;
+        padding: 0;
         display: block;
-        max-width: 483px;
+        max-width: 80vw;
     }
     #buttons img {
         margin: 1vw;
         width: 6vw;
         padding: 0;
         border-width: 0.2vw;
+    }
+    
+    #asteriskBox img{
+        width: 21%;
+    }
+    .popup{
+        width: 74%;
+    }
+    .popup img{
+        width: 60%;
+    }
+    
+    #artBox img {
+        max-width: 90%;
+        max-height: 120%;
     }
 }
