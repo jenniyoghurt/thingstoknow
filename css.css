@@ -184,14 +184,14 @@ hr{
 }
 
 @media only screen and (max-device-width: 450px){
-
+/*
 }
 
 @media (max-width: 1000px){
     h1{
         font-family: monospace;
     }
-   
+*/
     body{
         font-size: 300%;
     }
@@ -203,14 +203,14 @@ hr{
         padding: 5%;
     }
     #buttons {
-        margin: 0 auto;
+        margin: 0;
         padding: 0;
         display: block;
-        max-width: 80vw;
+        max-width: 96%;
     }
     #buttons img {
         margin: 1vw;
-        width: 6vw;
+        width: 8vw;
         padding: 0;
         border-width: 0.2vw;
     }
