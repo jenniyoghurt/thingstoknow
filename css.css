@@ -81,6 +81,12 @@ br{
     display: none;
 }
 
+#yoyoPic{
+    width: 200px;
+    padding: 5px;
+    float: right;
+}
+
 #asteriskBox .filterInactive{
     background-color: rgba(255, 249, 243, 1);
     border-width: 1px;
@@ -213,6 +219,10 @@ hr{
         width: 8vw;
         padding: 0;
         border-width: 0.2vw;
+    }
+    
+    #yoyoPic {
+        width: 40vw;
     }
     
     #asteriskBox img{
