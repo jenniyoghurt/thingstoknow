@@ -189,6 +189,11 @@ hr{
     margin: 15px 0;
 }
 
+.spotify {
+    width: 430px;
+    height: 300px;
+}
+
 @media only screen and (max-device-width: 450px){
 /*
 }
@@ -240,5 +245,9 @@ hr{
     #artBox img {
         max-width: 90%;
         max-height: 120%;
+    }
+    
+    .spotify{
+        width: 100%;
     }
 }
