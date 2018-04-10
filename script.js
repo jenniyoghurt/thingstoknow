@@ -79,6 +79,7 @@ function showPlaylist() {
 
 function popup(card) {
     hideAll("asterisk");
+    
     var str = "#";
     var str2 = str.concat(card);
     var popup = str2.concat("Popup");
