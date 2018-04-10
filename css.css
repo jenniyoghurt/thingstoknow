@@ -124,8 +124,8 @@ br{
     display: none;
     width: 300px;
     padding: 30px;
-    position: absolute;
-    margin-top: 125px;
+    position: fixed;
+    margin-top: 10px;
     left: 50%;
     margin-left: -180px;
     z-index: 1000;
