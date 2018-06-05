@@ -151,3 +151,17 @@ function filterStatus(status) {
 }
 
 
+function showArtDiv(artDiv){
+    var div = ".";
+    div = div.concat(artDiv);
+    var heading = "#";
+    heading = heading.concat(artDiv);
+    if($(div).is(":visible")){
+        $(heading).css('background-color', 'rgba(252, 245, 238, 1)');
+    } else {
+        $(heading).css('background-color', 'rgba(255, 254, 252, 1)');
+    }
+    $(div).slideToggle("slow");
+    
+    
+}

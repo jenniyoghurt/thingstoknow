@@ -110,17 +110,18 @@ br{
 
 #asteriskBox .filterInactive{
     background-color: rgba(255, 249, 243, 1);
-    border-width: 1px;
-    margin: 12px;
+    border-width: 0.1em;
+    margin: 1.1em;
 }
 
 #asteriskBox li{
     display: inline;
     border-style: solid;
-    padding: 10px;
-    margin: 10px;
+    border-width: 0.2em;
+    padding: 0.5em;
+    margin: 1em;
     background-color: rgba(255, 254, 252, 1);
-    border-radius: 20px;
+    border-radius: 0.5em;
 }
 #asteriskBox ul{
     padding-bottom: 20px;
@@ -219,19 +220,66 @@ h4 {
     max-height: 80vh;
     margin: 0 auto;
     display: block;
-    padding: 0.1em;
 }
-#artBox img+p{
+#artBox h4 {
+    background-color: rgba(252, 245, 238, 1);
+    border-style: solid;
+    border-width: 0.05em;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    margin: 0.2em;
+}
+#artBox h5{
+    text-align: center;
+    padding: 1em;
+    letter-spacing: 0.2em;
+    background-color: rgba(252, 245, 238, 1);
+    border-style: solid;
+    border-width: 0.05em;
+    cursor: pointer;
+    margin: 0.2em;
+}
+#artBox div:not(.artContent){
+    border-style: solid;
+    border-width: 0.05em;
+    background-color: rgba(252, 245, 238, 1);
+}
+#artBox h4:not(:first-of-type){
+    margin-top: 1em;
+}
+#artBox h5:not(:first-of-type){
+    margin-top: 1em;
+}
+#artBox div:not(:first-child){
+    margin: 0.2em;
+}
+#artBox .mainCatDiv:not(.free){
+    display: none;
+}
+#artBox p{
     text-align: right;
     font-size: 0.6em;
+    padding: 0.2em;
+    display: block;
+    clear: both;
+}
+#artBox .smallArt{
+    width: 50%;
+    padding: 0;
+    float: left;
+}
+#artBox hr{
+    border: none;
+    height: 0.05em;
+    color: darksalmon;
+    background-color: darksalmon;
+}
+.artContent{
+    display: none;
 }
 
 p a {
     font-size: inherit;
-}
-
-#artBox img+p:not(:last-child){
-    padding-bottom: 20px;
 }
 
 hr{
