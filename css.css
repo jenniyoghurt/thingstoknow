@@ -117,6 +117,7 @@ br{
     background-color: transparent;
     cursor: pointer;
     color: darksalmon;
+    padding: 20px 0;
 }
 
 #asteriskBox .filterInactive{
