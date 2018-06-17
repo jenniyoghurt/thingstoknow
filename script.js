@@ -165,3 +165,49 @@ function showArtDiv(artDiv){
     
     
 }
+
+
+var musicSlideIndex = 1;
+var fictSlideIndex = 1;
+
+function musicPlusDivs(n) {
+  showMusicDivs(musicSlideIndex += n);
+}
+
+function fictionalsPlusDivs(n) {
+    showFictionalsDivs(fictSlideIndex += n);
+}
+
+function showMusicDivs(n) {
+  var i;
+  var x = document.getElementsByClassName('musicSlides');
+    
+  if (n > (x.length - 3)) {musicSlideIndex = 1}    
+  if (n < 1) {musicSlideIndex = x.length - 3}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[musicSlideIndex-1].style.display = "inline";  
+  x[musicSlideIndex].style.display = "inline";  
+  x[musicSlideIndex+1].style.display = "inline";  
+  x[musicSlideIndex+2].style.display = "inline";  
+    
+}
+
+
+function showFictionalsDivs(n) {
+   
+  var i;
+  var x = document.getElementsByClassName('fictionalsSlides');
+    
+  if (n > (x.length - 3)) {fictSlideIndex = 1}    
+  if (n < 1) {fictSlideIndex = x.length - 3}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[fictSlideIndex-1].style.display = "inline";  
+  x[fictSlideIndex].style.display = "inline";  
+  x[fictSlideIndex+1].style.display = "inline";  
+  x[fictSlideIndex+2].style.display = "inline";  
+    
+}

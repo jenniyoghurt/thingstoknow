@@ -94,18 +94,29 @@ br{
 }
 
 .favsPics img{
-    display: inline;
-    width: 20%;
-    margin: 0;
-    padding: 0;
+    width: 23%;
     border-width: 0;
     -webkit- filter: grayscale(50%);  /* Safari 6.0 - 9.0 */
     filter: grayscale(80%);
 }
 
+.favsPics img:nth-child(n+6){
+    display: none;
+} 
+
 .favsPics img:hover{
     -webkit- filter: grayscale(20%);  /* Safari 6.0 - 9.0 */
     filter: grayscale(20%);
+}
+.favsPics button {
+    font-size: 20px;
+    vertical-align: top;
+    margin-top: 3%;
+    width: 4%;
+    border-width: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: darksalmon;
 }
 
 #asteriskBox .filterInactive{
@@ -328,11 +339,6 @@ hr{
         width: 40vw;
     }
     
-    .favsPics img{
-        -webkit- filter: grayscale(50%);  /* Safari 6.0 - 9.0 */
-        filter: grayscale(50%);
-    }
-    
     #asteriskBox img{
         width: 21%;
     }
@@ -352,5 +358,9 @@ hr{
     
     .spotify{
         width: 100%;
+    }
+    
+    .favsPics button {
+        font-size: 40px;
     }
 }
