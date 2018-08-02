@@ -87,11 +87,13 @@ function popup(card) {
     popupOpen = card;
 }
 
-function closePopup(card) {
-    var str = "#"
-    var str2 = str.concat(card)
-    var popup = str2.concat("Popup")
-    $(popup).slideUp("swing");
+function closePopup() {
+    if(popupOpen != ""){
+        var str = "#"
+        var str2 = str.concat(popupOpen)
+        var popup = str2.concat("Popup")
+        $(popup).slideUp("swing");
+    }
 }
 
 
