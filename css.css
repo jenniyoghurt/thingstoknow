@@ -394,4 +394,17 @@ hr{
     .favsPics button {
         font-size: 40px;
     }
+    
+    #asteriskBox li{
+        border-width: 0.1vw;
+        width: 24.8vw;
+        height: 4.8vw;
+        font-size: 3vw;
+        padding-top: 2.2vw;
+    }
+    #asteriskBox ul{ 
+        height: 7vw;
+        width: 75vw;
+        border-radius: 2vw;
+    }
 }
