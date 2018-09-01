@@ -94,6 +94,10 @@ br{
     width: 100%;
 }
 
+.bigFav {
+    font-size: 0.8em;
+}
+
 .favsPics img{
     width: 23%;
     border-width: 0;
@@ -122,23 +126,37 @@ br{
 }
 
 #asteriskBox .filterInactive{
-    background-color: rgba(255, 249, 243, 1);
-    border-width: 0.1em;
-    margin: 1.1em;
+    background-color: blanchedalmond;
 }
 
+#asteriskBox li:first-of-type{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#asteriskBox li:last-of-type{
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+    
 #asteriskBox li{
-    display: inline;
+    display: inline-block;
     border-style: solid;
-    border-width: 0.2em;
-    padding: 0.5em;
-    margin: 1em;
+    border-width: 1px;
     background-color: rgba(255, 254, 252, 1);
-    border-radius: 0.5em;
+    width: 128px;
+    height: 25px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
 }
 #asteriskBox ul{
-    padding-bottom: 20px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    border-style: solid;
+    height: 36px;
+    width: 390px;
+    font-size: 0;
+    border-radius: 10px;
 }
 
 #asteriskBox img{
@@ -148,6 +166,17 @@ br{
     border-width: 1px;
     margin: 5px;
     cursor: pointer;
+}
+
+#goals h5{
+    display: inline-block;
+    width: 5em;
+    padding-top: 2em;
+    text-align: right;
+}
+
+#goals img{
+    width: 5em;
 }
 
 #asteriskBox .wanted {

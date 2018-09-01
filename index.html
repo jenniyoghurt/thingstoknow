@@ -20,7 +20,7 @@
     	
     </header>
     
-    <p id="version">vers. 4.2</p>
+    <p id="version">vers. 4.3</p>
     
     <div id="content">
         
@@ -54,7 +54,7 @@
             <img class="acquired" alt="Jellyfish Yohane" src="cards/yohane1.png">
             <h4>jellyfish yohane</h4>
             <br>
-            <p>my favourite yohane in the game even though it's not my favourite set. underwater things!! are everything</p>
+            <p>one of my favourite yohanes in the game even though it's not my favourite set. underwater things!! are everything</p>
             <br>
             <p class="bold">status:</p>
             <p>seal idolized on my en (side), wanted on my main</p>
@@ -247,6 +247,17 @@
             <p>wanted</p>
         </div>
 		
+        <div id="yohane8Popup" class="popup">
+            <p class="close" onclick="closePopup()">close</p>
+            <img class="wanted" alt="panda china dress yohane" src="cards/yohane8.png">
+            <h4>panda / china dress yohane</h4>
+            <br>
+            <p>... my eyes have never seen something this cute. instant new dream ur</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>wanted</p>
+        </div>
+		
         <div id="chisato1Popup" class="popup">
             <p class="close" onclick="closePopup()">close</p>
             <img class="wanted" alt="band story 2 chisato" src="cards/chisato1.png">
@@ -434,15 +445,48 @@
             <p>wanted</p>
         </div>
 		
+        <div id="urahara1Popup" class="popup">
+            <p class="close" onclick="closePopup()">close</p>
+            <img class="acquired" alt="thousand year blood war bankai urahara kisuke" src="cards/urahara1-big.png">
+            <h4>tybw bankai urahara</h4>
+            <br>
+            <p>urahara is one of the most interesting characters, especially his bankai is fascinating. his character design is amazing, the effects on normal and strong attacks are beautiful, i love playing him</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>acquired</p>
+        </div>
+		
         <div id="ichigo4Popup" class="popup">
             <p class="close" onclick="closePopup()">close</p>
-            <img class="wanted" alt="thousand year blood war ichigo, v2" src="cards/ichigo4-big.png">
+            <img class="acquired" alt="thousand year blood war ichigo, v2" src="cards/ichigo4-big.png">
             <h4>thousand year blood war ichigo, v2</h4>
             <br>
             <p>i kind of suspected them to make another ichigo, just cause the last one was nad range which is so very not ichigo? my favourite type of character is melee sad,, and here we have him: mr ichigo, melee, sp up in heaven with the soul king,,, went down to 50 orbs which is the least i've had in.. a year? came home on the last pull. true legend.</p>
             <br>
             <p class="bold">status:</p>
             <p>acquired</p>
+        </div>
+		
+        <div id="hitsugaya5Popup" class="popup">
+            <p class="close" onclick="closePopup()">close</p>
+            <img class="acquired" alt="tag team hitsugaya" src="cards/hitsugaya5-big.png">
+            <h4>tag team hitsugaya</h4>
+            <br>
+            <p>even though the tag team episodes are fillers they're really nice, i might be biased but hitsugaya's story part is one of my favourites cause it feels so in character for hyourinmaru to not turn on him. so happy he finally got a 5 star version!</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>acquired</p>
+        </div>
+		
+        <div id="hina2Popup" class="popup">
+            <p class="close" onclick="closePopup()">close</p>
+            <img class="wanted" alt="bar hina" src="cards/hina2.png">
+            <h4>bar hina</h4>
+            <br>
+            <p>maybe i just like girls in fedoras, maybe i just like hina, maybe i just like this vibe, but this is without doubt one of my favourite sets</p>
+            <br>
+            <p class="bold">status:</p>
+            <p>wanted</p>
         </div>
 		
         <div id="aya5Popup" class="popup">
@@ -667,11 +711,11 @@
             </div>
             <br>
             <ul>
-                <li>nothing but thieves</li>
-                <li>local natives</li>
-                <li>coldplay</li>
-                <li>you me at six</li>
-                <li>bastille</li>
+                <li class="bigFav">nothing but thieves</li>
+                <li class="bigFav">local natives</li>
+                <li class="bigFav">coldplay</li>
+                <li class="bigFav">you me at six</li>
+                <li class="bigFav">bastille</li>
                 <li>&amp; so many more... check the &#9836; tab</li>
             </ul>
             <br>
@@ -696,13 +740,15 @@
             </div>
             <br>
             <ul>
-                <li>love live: &mu;'s: maki, eli, umi</li>
-                <li>love live: Aqours: yohane, you, kanan</li>
-                <li>bleach: hitsugaya, ichigo</li>
-                <li>bandori: aya, hina, sayo</li>
-                <li>cheeky vampire: anju</li>
-                <li>sailor moon: minako, michiru, hotaru</li>
+                <li class="bigFav">love live: &mu;'s: maki, eli, umi</li>
+                <li class="bigFav">love live: Aqours: yohane, you, kanan, riko</li>
+                <li class="bigFav">bleach: hitsugaya, ichigo</li>
+                <li class="bigFav">bandori: aya, hina, sayo</li>
+                <li class="bigFav">cheeky vampire: anju</li>
+                <li class="bigFav">sailor moon: minako, michiru, hotaru</li>
                 <li>harry potter: luna lovegood</li>
+                <li>deresute: kirarin, shiki</li>
+                <li>mirishita: takane, matsuri</li>
             </ul>  
             <br>
             <div id="fictionals2" class="favsPics">
@@ -735,9 +781,33 @@
                 <li onclick="filterGame('bbs')" id="filterbbs">bbs</li>
             </ul>
             
+            <div id="goals">
+            <br>
+            <hr>
+            <h4>main goals</h4>
+            <div id="sifGoals">
+                <h5>sif</h5>
+                <img id="yohane8" alt="panda china dress yohane" src="cards/yohane8.png" onclick="popup('yohane8')">
+                <img id="maki1" alt="Constellation Maki" src="cards/maki1.png" onclick="popup('maki1')">
+            </div>
+            <div id="banGoals">
+                <h5>bandori</h5>
+                <img id="aya1" alt="dreamfest Aya" src="cards/aya1.png" onclick="popup('aya1')">
+                <img id="chisato1" alt="band story 2 chisato" src="cards/chisato1.png" onclick="popup('chisato1')">
+            </div>
+            <div id="bbsGoals">
+                <h5>bbs</h5>
+                <p style="display: inline">all achieved!</p>
+            </div>
+            <hr>
+            <br>
+            </div>
+            
             <img id="aya5" class="acquired ban" alt="band story 2 aya" src="cards/aya5.png" onclick="popup('aya5')">
+            <img id="yohane8" class="wanted sif" alt="panda china dress yohane" src="cards/yohane8.png" onclick="popup('yohane8')">
+            <img id="hitsugaya5" class="acquired bbs" alt="tag team hitsugaya" src="cards/hitsugaya5.png" onclick="popup('hitsugaya5')">
             <img id="ichigo4" class="acquired bbs" alt="thousand year blood war ichigo, v2" src="cards/ichigo4.png" onclick="popup('ichigo4')">
-            <img id="yohane7" class="wanted sif" alt="rock yohane" src="cards/yohane7.png" onclick="popup('yohane7')">
+            <img id="hina2" class="wanted ban" alt="bar hina" src="cards/hina2.png" onclick="popup('hina2')">
             <img id="hitsugaya1" class="acquired bbs" alt="Diamond Dust Rebellion Hitsugaya" src="cards/hitsugaya1.png" onclick="popup('hitsugaya1')">
             <img id="maki1" class="wanted sif" alt="Constellation Maki" src="cards/maki1.png" onclick="popup('maki1')">
             <img id="tae2" class="acquired ban" alt="dreamfest tae" src="cards/tae2.png" onclick="popup('tae2')">
@@ -762,6 +832,8 @@
             <img id="eve1" class="acquired ban" alt="bushido eve" src="cards/eve1.png" onclick="popup('eve1')">
             <img id="yohane3" class="acquired sif" alt="cheshire yohane" src="cards/yohane3.png" onclick="popup('yohane3')">
             <img id="maki4" class="wanted sif" alt="mermaid maki" src="cards/maki4.png" onclick="popup('maki4')">
+            <img id="urahara1" class="acquired bbs" alt="tybw urahara" src="cards/urahara1.png" onclick="popup('urahara1')">
+            <img id="yohane7" class="wanted sif" alt="rock yohane" src="cards/yohane7.png" onclick="popup('yohane7')">
             <img id="chisato1" class="wanted ban" alt="band story 2 chisato" src="cards/chisato1.png" onclick="popup('chisato1')">
             <img id="ichigo2" class="acquired bbs" alt="dangai ichigo" src="cards/ichigo2.png" onclick="popup('ichigo2')">
             <img id="mari1" class="acquired sif" alt="angel mari" src="cards/mari1.png" onclick="popup('mari1')">
@@ -832,10 +904,16 @@
                     <hr>
                     <img src="https://pbs.twimg.com/media/DfCQdiCX4AYlwSN.jpg">
                     <p>though the record might spin, it's [all gone wrong]</p>
-                    <p><a href="https://t.co/4JyQ72gacr" target="_blank">prints etc.</a></p>
+                    <p><a href="https://t.co/4JyQ72gacr" target="_blank">&gt; prints etc.</a></p>
                     <hr>
                     <img src="https://pbs.twimg.com/media/DfFK49DXkAA3vNt.jpg">
                     <p>afterlife x graveyard whistling</p>
+                    <hr>
+                    <img src="https://pbs.twimg.com/media/DkYcCaZXoAA1eVm.jpg">
+                    <img src="https://pbs.twimg.com/media/Dk9SpD-XgAArYjo.jpg">
+                    <img src="https://pbs.twimg.com/media/DlHaIowXcAUp5Oc.jpg">
+                    <p>broken machine, watercolour sketchbook</p>
+                    <p><a href="https://twitter.com/i/moments/1028544546450366465">&gt; moment</a></p>
                 </div> 
             </div>
             

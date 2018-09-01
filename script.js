@@ -1,37 +1,37 @@
-var popupOpen = ""
+var popupOpen = "";
 
 function hideAll(except) {
-    if ((except != "home") && ($("#homeBox").is(":visible"))) {
-        $( "#homeBox" ).slideToggle( "slow", "swing" );
+    if ((except !== "home") && ($("#homeBox").is(":visible"))) {
+        $("#homeBox").slideToggle( "slow", "swing" );
     }
-    if ((except != "profile") && ($("#profileBox").is(":visible"))) {
+    if ((except !== "profile") && ($("#profileBox").is(":visible"))) {
         $( "#profileBox" ).slideToggle( "slow", "swing" );
     }
-    if ((except != "favs") && ($("#favsBox").is(":visible"))) {
+    if ((except !== "favs") && ($("#favsBox").is(":visible"))) {
         $( "#favsBox" ).slideToggle( "slow", "swing" );
     }
-    if ((except != "notes") && ($("#notesBox").is(":visible"))) {
+    if ((except !== "notes") && ($("#notesBox").is(":visible"))) {
         $( "#notesBox" ).slideToggle( "slow", "swing" );
     }
-    if ((except != "asterisk") && ($("#asteriskBox").is(":visible"))) {
+    if ((except !== "asterisk") && ($("#asteriskBox").is(":visible"))) {
         $( "#asteriskBox" ).slideToggle( "slow", "swing" );
     }
-    if ((except != "art") && ($("#artBox").is(":visible"))) {
+    if ((except !== "art") && ($("#artBox").is(":visible"))) {
         $( "#artBox" ).slideToggle( "slow", "swing" );
     }
-    if ((except != "playlist") && ($("#playlistBox").is(":visible"))) {
+    if ((except !== "playlist") && ($("#playlistBox").is(":visible"))) {
         $( "#playlistBox" ).slideToggle( "slow", "swing" );
     }
     
     $('.button').css('background-color', 'rgba(252, 245, 238, 1)');
     
     if(popupOpen != ""){
-        closePopup(popupOpen)
+        closePopup(popupOpen);
     }
 }
     
 function makeVis(box) {
-    var str1 = "#"
+    var str1 = "#";
     var str = str1.concat(box.concat("Box"))
     if(!($(str).is(":visible"))) {
         $(str).slideToggle( "slow", "swing" );
@@ -119,18 +119,21 @@ function setGameFilter(game, value) {
     }
 }
 
-var filterAcq = true;
-var filterWanted = true;
-
 function filterGame(game) {
     var str = '.';
     gameClass = str.concat(game);
+
+    var id = '#';
+    var gameId = id.concat(game);
+    var gameGoals = gameId.concat('Goals');
     
     if(checkGameFilter(game)) {
         $(gameClass).hide();
+        $(gameGoals).hide();
         setGameFilter(game, false);
     } else {
         $(gameClass).show();
+        $(gameGoals).show();
         setGameFilter(game, true);
     }
     
@@ -141,16 +144,6 @@ function filterGame(game) {
     $(buttonStr).toggleClass("filterInactive");
 }
 
-function filterStatus(status) {
-    var str = '.';
-    statusClass = str.concat(game);
-    $(statusClass).toggle();
-    
-    var button = '#filter';
-    var buttonStr = button.concat(status);
-    
-    $(buttonStr).toggleClass("filterInactive");
-}
 
 
 function showArtDiv(artDiv){
