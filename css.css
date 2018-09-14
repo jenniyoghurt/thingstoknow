@@ -170,13 +170,9 @@ br{
 
 #goals h5{
     display: inline-block;
-    width: 5em;
+    width: 90px;
     padding-top: 2em;
     text-align: right;
-}
-
-#goals img{
-    width: 5em;
 }
 
 #asteriskBox .wanted {
