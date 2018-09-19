@@ -398,9 +398,26 @@ hr{
         font-size: 3vw;
         padding-top: 2.2vw;
     }
+    #asteriskBox li:first-of-type{
+        border-top-left-radius: 1.5vw;
+        border-bottom-left-radius: 1.5vw;
+    }
+
+    #asteriskBox li:last-of-type{
+        border-top-right-radius: 1.5vw;
+        border-bottom-right-radius: 1.5vw;
+    }
+    
     #asteriskBox ul{ 
         height: 7vw;
         width: 75vw;
         border-radius: 2vw;
     }
+    
+    #goals h5{
+        font-size: 0.7em;
+        width: 3.7em;
+        padding-right: 0.3em;
+    }
 }
+    
