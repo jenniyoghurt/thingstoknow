@@ -209,6 +209,10 @@ function showFictionalsDivs(n) {
 
 
 var curMusicSlide = "nbt";
+var textsMusicSlides = {
+    nbt:    "<h5>nohing but thieves</h5><br><p>almost love all songs equally but i need air, six billion and afterlife are extra dear to me. i could list why every single song is my favourite - instead i'll just mention that hanging is my best friend.</p><p>NBT mean a big deal to me. it's more than just the music - it's travelling, personal growth and a constant in the mad times after leaving school. it's being part of something. ::</p><p>(i mean, the music is good too.)</p>",
+    oneR:   "<h5>one republic</h5><p>while i love everything they've released, the reason they're here is their debut album, dreaming out loud. it was one of the first albums i had and listened to, and will forever be one of my absolute favourites.</p>"
+}
 
 function favsInit() {
     openMusicSlide('nbt');
@@ -226,8 +230,17 @@ function openMusicSlide(item){
         $('#'.concat(curMusicSlide.concat('Favs')).concat('2')).addClass('greysc');
     }
     
+    var text = "";
+    switch (item) {
+        case 'nbt':
+            text = textsMusicSlides.nbt;
+            break;
+        case 'oneR':
+            text = textsMusicSlides.oneR;
+            break;
+    }
     
-    document.getElementById('musicSlide').innerHTML = item;
+    document.getElementById('musicSlide').innerHTML = text;
     
     
     document.getElementById(item.concat('Favs')).style.backgroundColor = "rgba(252, 240, 230, 1)"; $('#'.concat(item.concat('Favs'))).removeClass('greysc');
