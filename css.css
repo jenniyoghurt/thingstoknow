@@ -118,7 +118,10 @@ br{
 }
 
 .favsPics img{
-    width: 23%;
+    vertical-align: middle;
+    display: inline;
+    width: 19%;
+    padding: 2%;
     border-width: 0;
     -webkit- filter: grayscale(50%);  /* Safari 6.0 - 9.0 */
     filter: grayscale(80%);
@@ -133,15 +136,14 @@ br{
     filter: grayscale(20%);
 }
 .favsPics button {
+    vertical-align: middle;
     font-size: 20px;
-    vertical-align: top;
-    margin-top: 3%;
     width: 4%;
     border-width: 0px;
     background-color: transparent;
     cursor: pointer;
     color: darksalmon;
-    padding: 20px 0;
+    padding: 29px 0;
 }
 
 #asteriskBox .filterInactive{
