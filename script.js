@@ -210,8 +210,12 @@ function showFictionalsDivs(n) {
 
 var curMusicSlide = "nbt";
 var textsMusicSlides = {
-    nbt:    "<h5>nohing but thieves</h5><br><p>almost love all songs equally but i need air, six billion and afterlife are extra dear to me. i could list why every single song is my favourite - instead i'll just mention that hanging is my best friend.</p><p>NBT mean a big deal to me. it's more than just the music - it's travelling, personal growth and a constant in the mad times after leaving school. it's being part of something. ::</p><p>(i mean, the music is good too.)</p>",
-    oneR:   "<h5>one republic</h5><p>while i love everything they've released, the reason they're here is their debut album, dreaming out loud. it was one of the first albums i had and listened to, and will forever be one of my absolute favourites.</p>"
+    nbt:    "<h5>nohing but thieves</h5><br><p>almost love all songs equally but i need air, six billion and afterlife are extra dear to me. i could list why every single song is my favourite - instead i'll just mention that hanging is my best friend.</p><p>nbt mean a big deal to me. it's more than just the music - it's travelling, personal growth and a constant in the mad times after leaving school. it's being part of something. ::</p><p>(i mean, the music is good too.)</p>",
+    oneR:   "<h5>one republic</h5><p>while i love everything they've released, the reason they're here is their debut album, dreaming out loud. it was one of the first albums i had and listened to, and will forever be one of my absolute favourites.</p>",
+    kate:   "<h5>kate nash - made of bricks</h5><p>i'm not keeping up with what she's doing nowadays, but made of bricks is one brilliant album. many themes that ring with me... being alone and happy, being alone and sad.</p>",
+    lp:     "<h5>linkin park</h5><p>minutes to midnight is the first album i've ever bought, but meteora is the one i know by heart, the one that's closest to my heart. weird when the singer of such an important band dies on your birthday. i've always admired how they changed their style with every album, how they've constantly reinvented themselves. meteora was my thing, but they put something out for so many different music tastes.</p>",
+    locN:   "<h5>local natives</h5><p>found bowery on a plane - now it's my favourite song, of all songs. their music is so special, it feels like they transport me into a different world, no matter whether it's complete song or them walking down the street with a guitar. i love harmonies and layers in a song, discovering more at each listen. their music is so me.</p>",
+    bas:    "<h5>bastille</h5><p>i like everything bastille put out, haven't heard a bad thing yet. but like it's often the case for me, i like the extras so much more. bonus tracks are always my favourites. i like all ophas better than the studio albums. vs was with me in a very exciting and very memorable time of my life, so it's likely it's always gonna be my favourite. wild world felt more experimental than bad blood, so i'm excited to see where they go next.</p>"
 }
 
 function favsInit() {
@@ -237,6 +241,18 @@ function openMusicSlide(item){
             break;
         case 'oneR':
             text = textsMusicSlides.oneR;
+            break;
+        case 'kate':
+            text = textsMusicSlides.kate;
+            break;
+        case 'lp':
+            text = textsMusicSlides.lp;
+            break;
+        case 'locN':
+            text = textsMusicSlides.locN;
+            break;
+        case 'bas':
+            text = textsMusicSlides.bas;
             break;
     }
     

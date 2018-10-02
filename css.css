@@ -156,6 +156,7 @@ br{
     background-color: rgba(252, 240, 230, 1);
     padding: 0.3em;
     border-radius: 7px;
+    height: 7em;
 }
 
 
@@ -372,7 +373,9 @@ hr{
     h1{
         font-family: monospace;
     }
+
 */
+    
     body{
         font-size: 300%;
     }
@@ -452,6 +455,11 @@ hr{
         font-size: 0.7em;
         width: 3.7em;
         padding-right: 0.3em;
+    }
+    
+    .slide{
+        font-size: 75%;
+        font-size: 6vw;
     }
 }
     
