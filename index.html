@@ -14,7 +14,7 @@
     
 </head>
 
-<body>
+<body onload="favsInit()">
 
 	<header>
     	
@@ -730,65 +730,48 @@
             <h4>music</h4>
             <div class="favsPics">
                 <button onclick="musicPlusDivs(-1)">&lt;</button>
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/41YhdIRPrsL._AC_US218_.jpg" title="broken machine by nothing but thieves" alt="broken machine by nothing but thieves" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51H-KOdKCnL._AC_US218_.jpg" title="dreaming out loud by one republic" alt="dreaming out loud by one republic" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51k28TgCMQL._AC_US218_.jpg" title="made of bricks by kate nash" alt="made of bricks by kate nash" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/41Gr1rXBNXL._AC_US218_.jpg" title="meteora by linkin park" alt="meteora by linkin park" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51SWW86FLBL._AC_US218_.jpg" title="sunlit youth by local natives" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/616T2bwK6RL._AC_US218_.jpg" title="vs by bastille" alt="vs. other people's heartaches part 3 by bastille" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51jpEDjNktL._AC_US218_.jpg" title="ghost stories by coldplay" alt="ghost stories by coldplay" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/5117Uo5xKpL._SS500.jpg" title="how to save life by the fray" alt="how to save a life by the fray" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/41pTYDmHJfL._SS500.jpg" alt="evergreen by broods" title="evergreen by broods" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/41UEB2gqUlL._AC_US218_.jpg" title="nothing but thieves" alt="self-titled album by nothing but thieves" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51S6qfeZAbL._SS500.jpg" title="get to heaven by everything everything" alt="get to heaven by everything everything" class="musicSlides">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/61aMnmvCRCL.jpg" title="fixion by the oral cigarettes" alt="fixion by the oral cigarettes" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51xCiANZcKL._SS500.jpg" title="the script" alt="self-titled album by the script" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/41YhdIRPrsL._AC_US218_.jpg" title="broken machine by nothing but thieves" alt="broken machine by nothing but thieves" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51H-KOdKCnL._AC_US218_.jpg" title="dreaming out loud by one republic" alt="dreaming out loud by one republic" class="musicSlides">
-                <img src="https://images-eu.ssl-images-amazon.com/images/I/51k28TgCMQL._AC_US218_.jpg" title="made of bricks by kate nash" alt="made of bricks by kate nash" class="musicSlides">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41YhdIRPrsL._AC_US218_.jpg" title="broken machine by nothing but thieves" alt="broken machine by nothing but thieves" class="musicSlides" onclick="openMusicSlide('nbt')" id="nbtFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51H-KOdKCnL._AC_US218_.jpg" title="dreaming out loud by one republic" alt="dreaming out loud by one republic" class="musicSlides greysc" onclick="openMusicSlide('oneR')" id="oneRFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51k28TgCMQL._AC_US218_.jpg" title="made of bricks by kate nash" alt="made of bricks by kate nash" class="musicSlides greysc" onclick="openMusicSlide('kate')" id="kateFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41Gr1rXBNXL._AC_US218_.jpg" title="meteora by linkin park" alt="meteora by linkin park" class="musicSlides greysc" onclick="openMusicSlide('lp')" id="lpFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51SWW86FLBL._AC_US218_.jpg" title="sunlit youth by local natives" class="musicSlides greysc" onclick="openMusicSlide('locN')" id="locNFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/616T2bwK6RL._AC_US218_.jpg" title="vs by bastille" alt="vs. other people's heartaches part 3 by bastille" class="musicSlides greysc" onclick="openMusicSlide('bas')" id="basFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51jpEDjNktL._AC_US218_.jpg" title="ghost stories by coldplay" alt="ghost stories by coldplay" class="musicSlides greysc" onclick="openMusicSlide('coldplay')" id="coldplayFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/5117Uo5xKpL._SS500.jpg" title="how to save life by the fray" alt="how to save a life by the fray" class="musicSlides greysc" onclick="openMusicSlide('fray')" id="frayFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41pTYDmHJfL._SS500.jpg" alt="evergreen by broods" title="evergreen by broods" class="musicSlides greysc" onclick="openMusicSlide('broods')" id="broodsFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51S6qfeZAbL._SS500.jpg" title="get to heaven by everything everything" alt="get to heaven by everything everything" class="musicSlides greysc" onclick="openMusicSlide('ee')" id="eeFavs">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61aMnmvCRCL.jpg" title="fixion by the oral cigarettes" alt="fixion by the oral cigarettes" class="musicSlides greysc" onclick="openMusicSlide('toc')" id="tocFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51xCiANZcKL._SS500.jpg" title="the script" alt="self-titled album by the script" class="musicSlides greysc" onclick="openMusicSlide('script')" id="scriptFavs">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41YhdIRPrsL._AC_US218_.jpg" title="broken machine by nothing but thieves" alt="broken machine by nothing but thieves" class="musicSlides" onclick="openMusicSlide('nbt')" id="nbtFavs2">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51H-KOdKCnL._AC_US218_.jpg" title="dreaming out loud by one republic" alt="dreaming out loud by one republic" class="musicSlides greysc" onclick="openMusicSlide('oneR')" id="oneRFavs2">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/51k28TgCMQL._AC_US218_.jpg" title="made of bricks by kate nash" alt="made of bricks by kate nash" class="musicSlides greysc" onclick="openMusicSlide('kate')" id="kateFavs2">
                 <button onclick="musicPlusDivs(1)">&gt;</button>
             </div>
-            <br>
-            <ul>
-                <li class="bigFav">nothing but thieves</li>
-                <li class="bigFav">local natives</li>
-                <li class="bigFav">coldplay</li>
-                <li class="bigFav">you me at six</li>
-                <li class="bigFav">bastille</li>
-                <li>&amp; so many more... check the &#9836; tab</li>
-            </ul>
+            
+            <div id="musicSlide" class="slide">
+            </div>
+            
             <br>
             <hr>
             <h4>fictional characters</h4>
             <div class="favsPics">
                 <button onclick="fictionalsPlusDivs(-1)">&lt;</button>
-                <img src="favourites/neptune.png" alt="sailor neptune or michiru from sailor moon" title="neptune" class="fictionalsSlides">
-                <img src="cards/aya3.png" alt="aya from bandori" title="aya" class="fictionalsSlides">
-                <img src="cards/hitsugaya1.png" alt="hitsugaya from bleach" title="hitsugaya" class="fictionalsSlides">
-                <img src="cards/maki1.png" alt="maki from love live" title="maki" class="fictionalsSlides">
-                <img src="favourites/anju.jpg" alt="anju from cheeky vampire" title="anju" class="fictionalsSlides">
-                <img src="cards/hina1.png" alt="hina from bandori" title="hina" class="fictionalsSlides">
+                <img src="favourites/neptune.png" alt="sailor neptune or michiru from sailor moon" title="neptune" class="fictionalsSlides" onclick="openCharSlide('nept')" id="neptFavs">
+                <img src="cards/aya3.png" alt="aya from bandori" title="aya" class="fictionalsSlides greysc" onclick="openCharSlide('aya')" id="ayaFavs">
+                <img src="cards/hitsugaya1.png" alt="hitsugaya from bleach" title="hitsugaya" class="fictionalsSlides greysc" onclick="openCharSlide('toshi')" id="toshiFavs">
+                <img src="cards/maki1.png" alt="maki from love live" title="maki" class="fictionalsSlides greysc" onclick="openCharSlide('maki')" id="makiFavs">
+                <img src="favourites/anju.jpg" alt="anju from cheeky vampire" title="anju" class="fictionalsSlides greysc" onclick="openCharSlide('anju')" id="anjuFavs">
+                <img src="cards/hina1.png" alt="hina from bandori" title="hina" class="fictionalsSlides greysc" onclick="openCharSlide('hina')" id="hinaFavs">
                 <img src="favourites/luna.jpg" alt="luna from harry potter, played by evanna lynch" title="luna lovegood" class="fictionalsSlides">
-                <img src="cards/ichigo2.png" alt="ichigo from bleach" title="ichigo" class="fictionalsSlides">
-                <img src="cards/yohane6.png" alt="yohane or yoshiko from love live" title="yohane" class="fictionalsSlides" class="fictionalsSlides">
-                <img src="favourites/venus.jpg" alt="sailor venus or minako from sailor moon" title="v-chan" class="fictionalsSlides">
-                <img src="favourites/neptune.png" alt="sailor neptune or michiru from sailor moon" title="neptune" class="fictionalsSlides">
-                <img src="cards/aya3.png" alt="aya from bandori" title="aya" class="fictionalsSlides">
-                <img src="cards/hitsugaya1.png" alt="hitsugaya from bleach" title="hitsugaya" class="fictionalsSlides">
+                <img src="cards/ichigo2.png" alt="ichigo from bleach" title="ichigo" class="fictionalsSlides greysc" onclick="openCharSlide('ichigo')" id="ichigoFavs">
+                <img src="cards/yohane6.png" alt="yohane or yoshiko from love live" title="yohane" class="fictionalsSlides" class="fictionalsSlides greysc" onclick="openCharSlide('yohane')" id="yohaneFavs">
+                <img src="favourites/venus.jpg" alt="sailor venus or minako from sailor moon" title="v-chan" class="fictionalsSlides greysc" onclick="openCharSlide('minako')" id="minakoFavs">
+                <img src="favourites/neptune.png" alt="sailor neptune or michiru from sailor moon" title="neptune" class="fictionalsSlides" onclick="openCharSlide('nept')" id="neptFavs2">
+                <img src="cards/aya3.png" alt="aya from bandori" title="aya" class="fictionalsSlides greysc" onclick="openCharSlide('aya')" id="ayaFavs2">
+                <img src="cards/hitsugaya1.png" alt="hitsugaya from bleach" title="hitsugaya" class="fictionalsSlides greysc" onclick="openCharSlide('toshi')" id="toshiFavs2">
                 <button onclick="fictionalsPlusDivs(1)">&gt;</button>
             </div>
-            <br>
-            <ul>
-                <li class="bigFav">love live: &mu;'s: maki, eli, umi</li>
-                <li class="bigFav">love live: Aqours: yohane, you, kanan, riko</li>
-                <li class="bigFav">bleach: hitsugaya, ichigo</li>
-                <li class="bigFav">bandori: aya, hina, sayo</li>
-                <li class="bigFav">cheeky vampire: anju</li>
-                <li class="bigFav">sailor moon: minako, michiru, hotaru</li>
-                <li>harry potter: luna lovegood</li>
-                <li>deresute: kirarin, shiki, nao, ranko</li>
-                <li>mirishita: takane, matsuri</li>
-            </ul>  
+            <div id="fictSlide" class="slide"></div>
             <br>
             <div id="fictionals2" class="favsPics">
             </div>

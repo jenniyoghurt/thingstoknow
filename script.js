@@ -206,3 +206,70 @@ function showFictionalsDivs(n) {
   x[fictSlideIndex+2].style.display = "inline";  
     
 }
+
+
+var curMusicSlide = "nbt";
+
+function favsInit() {
+    openMusicSlide('nbt');
+    openCharSlide('nept');
+}
+
+function openMusicSlide(item){
+    document.getElementById(curMusicSlide.concat('Favs')).style.backgroundColor = "rgba(252, 240, 230, 0)";
+    
+    $('#'.concat(curMusicSlide.concat('Favs'))).addClass('greysc');
+    
+    
+    if(curMusicSlide == "nbt" || curMusicSlide == "oneR" || curMusicSlide == "kate"){
+        document.getElementById(curMusicSlide.concat('Favs').concat('2')).style.backgroundColor = "rgba(252, 240, 230, 0)"; 
+        $('#'.concat(curMusicSlide.concat('Favs')).concat('2')).addClass('greysc');
+    }
+    
+    
+    document.getElementById('musicSlide').innerHTML = item;
+    
+    
+    document.getElementById(item.concat('Favs')).style.backgroundColor = "rgba(252, 240, 230, 1)"; $('#'.concat(item.concat('Favs'))).removeClass('greysc');
+    
+    curMusicSlide = item;
+    
+    if(item == "nbt" || item == "oneR" || item == "kate"){
+        document.getElementById(item.concat('Favs').concat('2')).style.backgroundColor = "rgba(252, 240, 230, 1)"; 
+        $('#'.concat(item.concat('Favs')).concat('2')).removeClass('greysc');
+    }
+    
+   
+}
+
+
+var curCharSlide = "nept";
+
+function openCharSlide(item){
+    
+    document.getElementById(curCharSlide.concat('Favs')).style.backgroundColor = "rgba(252, 240, 230, 0)";
+    
+    $('#'.concat(curCharSlide.concat('Favs'))).addClass('greysc');
+    
+    
+    if(curCharSlide == "nept" || curCharSlide == "aya" || curCharSlide == "toshi"){
+        document.getElementById(curCharSlide.concat('Favs').concat('2')).style.backgroundColor = "rgba(252, 240, 230, 0)"; 
+        $('#'.concat(curCharSlide.concat('Favs')).concat('2')).addClass('greysc');
+    }
+    
+    
+    document.getElementById('fictSlide').innerHTML = item;
+    
+    
+    document.getElementById(item.concat('Favs')).style.backgroundColor = "rgba(252, 240, 230, 1)"; $('#'.concat(item.concat('Favs'))).removeClass('greysc');
+    
+    curCharSlide = item;
+    
+    if(item == "nept" || item == "aya" || item == "toshi"){
+        document.getElementById(item.concat('Favs').concat('2')).style.backgroundColor = "rgba(252, 240, 230, 1)"; 
+        $('#'.concat(item.concat('Favs')).concat('2')).removeClass('greysc');
+    }
+    
+   
+}
+

@@ -109,7 +109,7 @@ br{
 
 .favsPics {
     font-size: 0;
-    padding: 3px 0;
+    padding: 3px 0 0 0;
     width: 100%;
 }
 
@@ -123,6 +123,11 @@ br{
     width: 19%;
     padding: 2%;
     border-width: 0;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.greysc {
     -webkit- filter: grayscale(50%);  /* Safari 6.0 - 9.0 */
     filter: grayscale(80%);
 }
@@ -131,7 +136,7 @@ br{
     display: none;
 } 
 
-.favsPics img:hover{
+.greysc:hover {
     -webkit- filter: grayscale(20%);  /* Safari 6.0 - 9.0 */
     filter: grayscale(20%);
 }
@@ -145,6 +150,14 @@ br{
     color: darksalmon;
     padding: 29px 0;
 }
+
+
+.slide {
+    background-color: rgba(252, 240, 230, 1);
+    padding: 0.3em;
+    border-radius: 7px;
+}
+
 
 #asteriskBox .filterInactive{
     background-color: blanchedalmond;
