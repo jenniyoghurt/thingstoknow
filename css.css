@@ -159,6 +159,9 @@ br{
     height: 7em;
 }
 
+#fictSlide {
+    height: 4.5em;
+}
 
 #asteriskBox .filterInactive{
     background-color: blanchedalmond;
@@ -458,8 +461,7 @@ hr{
     }
     
     .slide{
-        font-size: 75%;
-        font-size: 6vw;
+        height: auto;
     }
 }
     
