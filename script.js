@@ -1,5 +1,9 @@
 var popupOpen = "";
 
+function hideLoading(){
+    $('#loading').fadeOut(500);
+}
+
 function hideAll(except) {
     if ((except !== "home") && ($("#homeBox").is(":visible"))) {
         $("#homeBox").slideToggle( "slow", "swing" );
