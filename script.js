@@ -148,10 +148,8 @@ function filterGame(game) {
 
 
 function showArtDiv(artDiv){
-    var div = ".";
-    div = div.concat(artDiv);
-    var heading = "#";
-    heading = heading.concat(artDiv);
+    var div = ".".concat(artDiv);
+    var heading = "#".concat(artDiv);
     if($(div).is(":visible")){
         $(heading).css('background-color', 'rgba(252, 245, 238, 1)');
     } else {
