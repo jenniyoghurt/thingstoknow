@@ -70,6 +70,9 @@ br{
     border-width: 1px;
     cursor: pointer;
 }
+#buttons img:hover{
+    background-color: rgba(255, 254, 252, 1);
+}
 .box {
     width: 430px;
     background-color: rgba(255, 249, 243, 1);
@@ -95,10 +98,17 @@ br{
     vertical-align: middle;
     margin: 0.2em;
 }
+#homeNav img:hover{
+    background-color: rgba(255, 254, 252, 1);
+    cursor: pointer;
+}
 
 #homeNav p {
     display: inline;
     font-size: 0.8em;
+}
+#homeNav p:hover{
+    cursor: pointer;
 }
 
 #yoyoPic{
@@ -162,6 +172,72 @@ br{
 #fictSlide {
     height: 4.5em;
 }
+
+#favCharsButtons {
+    margin: 0 auto;
+    display: block;
+    line-height: 30px;
+    width: 429px;
+    padding-bottom: 5px;
+}
+#favCharsButtons p {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(252, 245, 238, 1);
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+#favCharsButtons p:hover{
+    background-color:  rgba(255, 254, 252, 1);
+    cursor: pointer;
+}
+
+#favsBox .popup{
+    top: 120px;
+}
+#favsBox .popup img{
+    width: 70px;
+    display: inline;
+    float: right;
+    margin-top: -35px;
+}
+#favsBox .popup ol, ul{
+    list-style-position: inside;
+    margin-left: 0;
+}
+#favsBox .popup li{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    height: auto;
+    line-height: 20px;
+    background-color: rgba(255, 254, 252, 1);
+    margin-bottom: 35px;
+}
+#favsBox .popup li:last-of-type{
+    margin-bottom: 0;
+}
+#favsBox .tiedFavs {
+    margin: 0 auto;
+    width: 270px;
+    font-size: 0;
+}
+#favsBox .tiedFavs img{
+    display: inline-block;
+    float: none;
+    margin: 2px;
+    width: 48px;
+}
+
+
+
+
+
+
 
 #asteriskBox .filterInactive{
     background-color: blanchedalmond;
@@ -234,6 +310,7 @@ br{
     border-radius: 15px;
     border-color: darksalmon;
     border-width: 1px;
+    box-shadow: 4px 3px;
 }
 .popup img{
     border-radius: 100%;
@@ -467,5 +544,41 @@ hr{
     #fictSlide{
         height: auto;
     }
+    
+
+    #favCharsButtons {
+        line-height: auto;
+        width: 100%;
+    }
+    #favCharsButtons p {
+        border-radius: 30px;
+        padding: 20px;
+        width: auto;
+        font-size: 0.6em;
+    }
+    
+    
+    #favsBox .popup{
+        position: fixed;
+    }
+    #favsBox .popup img{
+        width: 3em;
+    }
+    #favsBox .popup li{
+        height: 1em;
+        line-height: 1em;
+       margin-top: 1.8em;
+    }
+    #favsBox .popup li:last-of-type{
+        height: auto;
+    }
+    #favsBox .tiedFavs {
+        width:100%;
+        max-width: 480px;
+    }
+    #favsBox .tiedFavs img{
+        width: 90px;
+    }
+    
 }
     
