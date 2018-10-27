@@ -331,7 +331,8 @@ br{
     z-index: 1000;
     background-color: rgba(252, 240, 230, 1);
     border-style: solid;
-    border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     border-color: darksalmon;
     border-width: 1px;
     box-shadow: 4px 3px;
