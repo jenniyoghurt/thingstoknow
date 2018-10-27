@@ -586,22 +586,23 @@ hr{
         position: fixed;
     }
     #favsBox .popup img{
-        width: 3em;
+        width: 5em;
+        margin-top: -2.1em;
+        margin-right: 0.5em;
     }
     #favsBox .popup li{
-        height: 1em;
-        line-height: 1em;
-       margin-top: 1.8em;
+       line-height: 2em;
+       margin-bottom: 3em;
+        border-radius: 1em;
     }
     #favsBox .popup li:last-of-type{
         height: auto;
     }
     #favsBox .tiedFavs {
         width:100%;
-        max-width: 480px;
     }
     #favsBox .tiedFavs img{
-        width: 90px;
+        width: 120px;
     }
     
 }
