@@ -494,7 +494,7 @@ iframe{
         padding: 20px;
     }
     .favourite{
-        height: 160px;
+        height: auto;
         border-radius: 20px;
     }
     .favourite p:first-of-type{
