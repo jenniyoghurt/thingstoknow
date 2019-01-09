@@ -487,7 +487,7 @@ iframe{
     /* games */
     .favourite .statusImage{
         width: 160px;
-        margin-right: -140px;
+        margin-right: -160px;
     }
     .favourite img{
         width: 120px;
