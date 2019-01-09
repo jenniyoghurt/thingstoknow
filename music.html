@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#ffebf5">
+<title>music - jenyoyo</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,600" rel="stylesheet">
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<link rel="icon" href="asterisk.png">
+    
+</head>
+    
+<body onload="musicRotate()">
+    <div id='musicContent' class='content'>
+        <span class="back" onclick="historyBack()"><p>&lt; back</p></span>
+    <h2>music</h2>
+        <h3>on repeat this week</h3>
+            <iframe src="https://open.spotify.com/embed/album/6ApYSpXF8GxZAgBTHDzYge" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <h3>playlists</h3>
+            <div id="playlists">
+            <iframe src="https://open.spotify.com/embed/user/jen.yoyo/playlist/2wh1Z48a804NYu2UKyWXZP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/user/jen.yoyo/playlist/0md59uzNqpYFViI61W8vzt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <a href="https://open.spotify.com/user/jen.yoyo?si=ZMFhD3dzQh-KSnWF6SSsNA" target="_blank" title="spotify profile">&gt; more</a>
+        
+        <h3>some all time favourites</h3>
+        <div id="allTimeFavs">
+            <p id="favName">nothing but thieves</p>
+            <img onclick="favActive('nbt')"                     id="nbt"                  src="music/nbt1.jpg">
+            <img onclick="favActive('localnatives')"            id="localnatives"         src="music/localnatives3.jpg"         class="inactive">
+            <img onclick="favActive('theoralcigarettes')"       id="theoralcigarettes"    src="music/theoralcigarettes.jpg"     class="inactive">
+            <img onclick="favActive('coldplay')"                id="coldplay"             src="music/coldplay6.jpg"             class="inactive">
+            <img onclick="favActive('youmeatsix')"              id="youmeatsix"           src="music/youmeatsix6.jpg"           class="inactive">
+            <img onclick="favActive('bastille')"                id="bastille"             src="music/bastille2.jpg"             class="inactive">
+            <img onclick="favActive('onerepublic')"             id="onerepublic"          src="music/onerepublic1.jpg"          class="inactive">
+            <img onclick="favActive('everythingeverything')"    id="everythingeverything" src="music/everythingeverything3.jpg" class="inactive">
+            <img onclick="favActive('katenash')"                id="katenash"             src="music/katenash.jpg"              class="inactive">
+            <img onclick="favActive('linkinpark')"              id="linkinpark"           src="music/linkinpark2.jpg"           class="inactive">
+            <img onclick="favActive('thefray')"                 id="thefray"              src="music/thefray1.jpg"              class="inactive">
+            <img onclick="favActive('thescript')"               id="thescript"            src="music/thescript1.jpg"            class="inactive">
+            <img onclick="favActive('broods')"                  id="broods"               src="music/broods.jpg"                class="inactive">
+            <img onclick="favActive('qotsa')"                   id="qotsa"                src="music/qotsa5.jpg"                class="inactive">
+            <img onclick="favActive('sohn')"                    id="sohn"                 src="music/sohn1.jpg"                 class="inactive">
+        </div>
+    </div>
+</body>
+</html>

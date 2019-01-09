@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#ffebf5">
+<title>games - jenyoyo</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:400,600" rel="stylesheet">
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<link rel="icon" href="asterisk.png">
+    
+</head>
+    
+<body onload="favouritesRotate()">
+    <div id='gamesContent' class='content'>
+        <span class="back" onclick="historyBack()"><p>&lt; back</p></span>
+    <h2>games</h2>
+        <div id="gameAccounts">
+            <p>if you want to add me, please do! let me know in case i need to make some space. click friend codes to copy them!</p>
+            
+            <h3>bandori</h3>
+            
+            <h4>favourites</h4>
+            <div class="favourite" id="aya">
+                <img alt="Maruyama Aya pig" src="chibis/aya.png" class="chibi">
+                <img id="ayaMissing" class="missing card" src="cards/ayaNY.png">
+                <img class="statusImage" src="cards/missing.png">
+                <img id="ayaHome" class="home card" src="cards/ayaBS2.png">
+                <img class="statusImage" src="cards/home.png">
+                <p>maruyama aya</p>
+                <p>my sweet angel. my fluffy pink source of happiness.</p>
+                <p>4* counter: 02/05</p>
+            </div>
+            
+            <div class="favourite" id="hina">
+                <img alt="Hikawa Hina pig" class="chibi" src="chibis/hina.png">
+                <img id="hinaMissing" class="missing card" src="cards/hinaHallo.png">
+                <img class="statusImage" src="cards/missing.png">
+                <img id="hinaHome" class="home card" src="cards/hinaGemini.png">
+                <img class="statusImage" src="cards/home.png">
+                <p>hikawa hina</p>
+                <p>i will personally rob every last star in the sky to make hina happy</p>
+                <p>4* counter: 03/05</p>
+            </div>
+            
+            <div class="favourite" id="sayo">
+                <img alt="Hikawa Sayo pig" class="chibi" src="chibis/sayo.png">
+                <img id="sayoMissing" class="missing card" src="cards/sayoGemini.png">
+                <img class="statusImage" src="cards/missing.png">
+                <img id="sayoHome" class="home card" src="cards/sayoDF.png">
+                <img class="statusImage" src="cards/home.png">
+                <p>hikawa sayo</p>
+                <p>her smiles make my heart so warm. so rare, so beautiful</p>
+                <p>4* counter: 01/05</p>
+            </div>
+            
+            <div class="favourite" id="yukina">
+                <img alt="minato yukina pig" class="chibi" src="chibis/yukina.png">
+                <img id="yukinaMissing" class="missing card" src="cards/yukinaAnni.png">
+                <img class="statusImage" src="cards/missing.png">
+                <img id="yukinaHome" class="home card" src="cards/yukinaRain.png">
+                <img class="statusImage" src="cards/home.png">
+                <p>minato yukina</p>
+                <p>the way she looks at cats? that's how i look at her</p>
+                <p>4* counter: 01/06</p>
+            </div>
+            
+            <div id="top12" class="furtherFavs">
+                <img alt="hanazono tae" src="cards/taeDF.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="Imai Lisa" src="cards/lisaMarching.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="yamabuki saaya" src="cards/saayaInit.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="mitake ran. OCTOPUS RAN" src="cards/ranOctopus.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="aoba moca" src="cards/mocaDF.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="matsubara kanon" src="cards/kanonDF.png" id="kanon">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="tsurumaki kokoro" src="cards/kokoroDetective.png">
+                <img class="statusImage" src="cards/missing.png">
+                
+                <img alt="uehara himari" src="cards/himariHowdy.png">
+                <img class="statusImage" src="cards/missing.png">
+            </div>
+            
+            <a href="https://jenniyoghurt.github.io/bandcreator/goals.html" target="_blank">&gt; my side goals</a>
+            
+            <div class="codeDiv">
+                <p class="friendCode" onclick="copyFC('banPaCode')">FRIEND CODE:</p>
+                <input type="text" value="9329693" id="banPaCode" class="codeArea">
+                <button onclick="copyFC('banPaCode')">9329693</button>
+            </div>
+            <h4>main account</h4>
+            <ul>
+                <li>server: jp</li>
+                <li>used since: sakura blooming party (march/april 2017)</li>
+                <li>going for top 20k every event</li>
+                <li><a href="http://bandori.party/user/4915/jenyoyo/#4832" target="_blank">&gt; banpa (complete and gets updated a lot)</a></li>
+            </ul>
+            
+            
+            
+            <div class="codeDiv">
+                <p class="friendCode" onclick="copyFC('banPaEnCode')">FRIEND CODE:</p>
+                <input type="text" value="2151835" id="banPaEnCode" class="codeArea">
+                <button onclick="copyFC('banPaEnCode')">2151835</button>
+            </div>
+            <h4>side accounts</h4>
+            <ul>
+                <li>main side on en (friend code on the right)</li>
+                <li>two sides on tablet (jp and en)</li>
+                <li><a href="http://bandori.party/user/4915/jenyoyo/#4832" target="_blank">&gt; banpa for all sides (probably not up to date)</a></li>
+            </ul>
+            
+
+            <h3>love live: school idol festival</h3>
+            
+            <h4>favourites</h4>
+            <div class="favourite" id="maki">
+                <img alt="nishikino maki egg" src="chibis/maki.png" class="chibi">
+                <img id="makiMissing" class="missing card" src="cards/makiCrayon.png">
+                <img class="statusImage" src="cards/missing.png">
+                <img id="makiHome" class="home card" src="cards/makiConstellation.png">
+                <img class="statusImage" src="cards/home.png">
+                <p>nishikino maki</p>
+                <p>love at first sight is a thing because i saw maki and</p>
+                <p>UR count: 05/15</p>
+            </div>
+            
+            <div class="favourite" id="yohane">
+                <img alt="yohane egg" src="chibis/yohane.png" class="chibi">
+                <img id="yohaneMissing" class="missing card" src="cards/yohaneCD.png">
+                <img class="statusImage" src="cards/missing.png">
+                <img id="yohaneHome" class="home card" src="cards/yohaneNY.png">
+                <img class="statusImage" src="cards/home.png">
+                <p>yohane</p>
+                <p>i'm so lucky to have her. </p>
+                <p>UR count: 04/10</p>
+            </div>
+            
+            <div class="furtherFavs">
+                <img alt="sakurauchi riko" src="cards/rikoAngel.png" id="riko">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="ayase eli" id="eli" src="cards/eliChoir.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="matsuura kanan" id="kanan" src="cards/kananYukata.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="sonada umi" id="umi" src="cards/umiInit.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="watanabe you" id="you" src="cards/youWonderland.png">
+                <img class="statusImage" src="cards/missing.png">
+            </div>
+            
+            <h4>main account</h4>
+            <div class="codeDiv">
+                <p class="friendCode" onclick="copyFC('sifCode')">FRIEND CODE:</p>
+                <input type="text" value="237007769" id="sifCode" class="codeArea">
+                <button onclick="copyFC('sifCode')">237007769</button>
+            </div>
+            <ul>
+                <li>server: jp</li>
+                <li>used since january 2016 (>1000 login days)</li>
+                <li>haven't missed a single login day until day number 1000, have missed quite a few since (oops)</li>
+                <li><a href="https://schoolido.lu/user/jenyoyo/#57607" target="_blank">&gt; sukutomo, not complete or up to date</a></li>
+            </ul>
+            
+            <h4>side accounts</h4>
+            <div class="codeDiv">
+                <p class="friendCode" onclick="copyFC('sifCode')">FRIEND CODE:</p>
+                <input type="text" value="237007769" id="sifCode" class="codeArea">
+                <button onclick="copyFC('sifCode')">237007769</button>
+            </div>
+            <ul>
+                <li>main side on en (friend code on the right)</li>
+                <li>two sides on tablet (jp and en)</li>
+                <li>got jellyfish yohane on my main side (my dream yohane before china dress dropped!)</li>
+            </ul>
+
+            <h3>bleach brave souls</h3>
+            <h4>favourites</h4>
+            <div class="furtherFavs">
+                <img alt="hitsugaya" id="hitsugaya" src="cards/hitsugayaTYBW.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="kurosaki ichigo" id="ichigo" src="cards/ichigoTYBW2.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="kuchiki rukia" id="rukia" src="cards/rukiaTYBW.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="riruka" id="riruka" src="cards/rirukaHalloBand.png">
+                <img class="statusImage" src="cards/home.png">
+                
+                <img alt="extra characters i really like" id="extra" src="cards/ginHallo.png">
+                <img class="statusImage" src="cards/home.png">
+            </div>
+            
+            <div class="codeDiv">
+                <p class="friendCode" onclick="copyFC('bbsCode')">FRIEND CODE:</p>
+                <input type="text" value="32728589" id="bbsCode" class="codeArea">
+                <button onclick="copyFC('bbsCode')">32728589</button>
+            </div>
+            <h4>account</h4>
+            <ul>
+                <li>not as active anymore but new exciting things are planned for 2019</li>
+                <li>sort of have all characters i've ever tried to get which is absolutely incredible and i'm so grateful</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>

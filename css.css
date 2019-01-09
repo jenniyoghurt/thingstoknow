@@ -1,610 +1,535 @@
 @charset "utf-8";
 
-
+/* bases */
 * {
 	margin: 0;
 	padding: 0;
     -webkit-text-size-adjust: none;
-    cursor: default;
     max-height: 100000px;
+    color: #56323b;
+    font-family: 'Josefin Sans';
+    font-size: 0;
+    border-color: #56323b;
 }
-
-#loading {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: blanchedalmond;
-    z-index: 2;
-}
-#loading p{
-    font-family: monospace;
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-top: -25px;
-}
-
-body {
-	font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-	font-size: 22px;
-	background-color: blanchedalmond;
-    color: darksalmon;
+body{
+    background-color: #fffdfe;
     overflow-y: scroll;
 }
-#version{
-	font-size: 0.5em;
-    padding: 2px;
-}
-h1{
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-}
-#content{
-	margin: 0 auto;
-    width: 490px;
-    padding-bottom: 30px;
-}
-p {
-	font-size: 0.7em;
-}
-li{
-	font-size: 0.7em;
-}
-li ul li{
-    font-size: 0.9em;
-}
-a {
-    font-size: 0.7em;
-    color: darksalmon;
-	text-decoration: none;
-    cursor: pointer;
-}
-a:hover{
-	color: bisque;
-}
-
-ul{
-	margin-left: 25px;
-	list-style-image:url(bulletmoon.png);
-}
-br{
-	display: block;
-	content: "";
-	margin-top: 7px;
-}
-#buttons {
-    margin-left: 7px;
-}
-#buttons img{
-    background-color: rgba(252, 245, 238, 1);
-    padding: 2px;
-    margin: 13px;
-    width: 30px;
-    border-color: darksalmon;
-    border-radius: 100%;
-    border-style: solid;
-    border-width: 1px;
-    cursor: pointer;
-}
-#buttons img:hover{
-    background-color: rgba(255, 254, 252, 1);
-}
-.box {
-    width: 430px;
-    background-color: rgba(255, 249, 243, 1);
-    padding: 30px;
-    border-style: solid;
-    border-color: darksalmon;
-    border-width: 1px;
-}
-#profileBox, #favsBox, #notesBox, #asteriskBox, #artBox, #playlistBox {
-  display: none;
-}
-
-
-#homeNav {
-}
-
-#homeNav img{
-    display: inline;
-    width: 1.8em;
-    border-style: solid;
-    border-radius: 100%;
-    border-width: 1px;
-    vertical-align: middle;
-    margin: 0.2em;
-}
-#homeNav img:hover{
-    background-color: rgba(255, 254, 252, 1);
-    cursor: pointer;
-}
-
-#homeNav p {
-    display: inline;
-    font-size: 0.8em;
-}
-#homeNav p:hover{
-    cursor: pointer;
-}
-
-#yoyoPic{
-    width: 200px;
-    padding: 5px;
-    float: right;
-}
-
-.favsPics {
-    font-size: 0;
-    padding: 3px 0 0 0;
-    width: 100%;
-}
-
-.bigFav {
-    font-size: 0.8em;
-}
-
-.favsPics img{
-    vertical-align: middle;
-    display: inline;
-    width: 19%;
-    padding: 2%;
-    border-width: 0;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-
-.greysc {
-    -webkit- filter: grayscale(50%);  /* Safari 6.0 - 9.0 */
-    filter: grayscale(80%);
-}
-
-.favsPics img:nth-child(n+6){
-    display: none;
-} 
-
-.greysc:hover {
-    -webkit- filter: grayscale(20%);  /* Safari 6.0 - 9.0 */
-    filter: grayscale(20%);
-}
-.favsPics button {
-    vertical-align: middle;
-    font-size: 20px;
-    width: 4%;
-    border-width: 0px;
-    background-color: transparent;
-    cursor: pointer;
-    color: darksalmon;
-    padding: 29px 0;
-}
-
-
-.slide {
-    background-color: rgba(252, 240, 230, 1);
-    padding: 0.3em;
-    border-radius: 7px;
-    height: 7em;
-}
-
-#fictSlide {
-    height: 4.5em;
-}
-
-#favCharsButtons {
-    margin: 0 auto;
-    display: block;
-    line-height: 30px;
-    width: 429px;
-    padding-bottom: 5px;
-}
-#favCharsButtons p {
-    display: inline-block;
+hr{
+    border-color: #56323b;
     border: 1px solid;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgba(252, 245, 238, 1);
-    width: 90px;
+}
+button{
+    font-size: 16px;
+    background-color: #56323b;
+    color: #fffdfe;
+    border: none;
+    width: 100px;
     height: 30px;
-    text-align: center;
-    vertical-align: middle;
-}
-#favCharsButtons p:hover{
-    background-color:  rgba(255, 254, 252, 1);
     cursor: pointer;
-}
-
-#favsBox .popup{
-    top: 40px;
-}
-#favsBox .popup img{
-    width: 70px;
-    display: inline;
-    float: right;
-    margin-top: -35px;
-}
-#favsBox .popup ol, ul{
-    list-style-position: inside;
-    margin-left: 0;
-}
-#favsBox .popup li{
-    border: 1px solid;
-    border-radius: 10px;
-    padding: 10px;
-    height: auto;
-    line-height: 20px;
-    background-color: rgba(255, 254, 252, 1);
-    margin-bottom: 35px;
-}
-#favsBox .popup li:last-of-type{
-    margin-bottom: 0;
-}
-#favsBox .tiedFavs {
-    margin: 0 auto;
-    width: 270px;
-    font-size: 0;
-}
-#favsBox .tiedFavs img{
-    display: inline-block;
-    float: none;
-    margin: 2px;
-    width: 48px;
-}
-
-
-
-
-
-
-
-#asteriskBox .filterInactive{
-    background-color: blanchedalmond;
-}
-
-#asteriskBox li:first-of-type{
-    border-top-left-radius: 7px;
-    border-bottom-left-radius: 7px;
-}
-
-#asteriskBox li:last-of-type{
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
-    
-#asteriskBox li{
-    display: inline-block;
-    border-style: solid;
-    border-width: 1px;
-    background-color: rgba(255, 254, 252, 1);
-    width: 128px;
-    height: 25px;
-    font-size: 18px;
-    text-align: center;
-    padding-top: 10px;
-}
-#asteriskBox ul{
-    margin: 0 auto; 
-    border-style: solid;
-    height: 36px;
-    width: 390px;
-    font-size: 0;
-    border-radius: 10px;
-}
-
-#asteriskBox img{
-    width: 90px;
-    border-radius: 100%;
-    border-style: solid;
-    border-width: 1px;
-    margin: 5px;
-    cursor: pointer;
-}
-
-#goals h5{
-    display: inline-block;
-    width: 90px;
-    padding-top: 2em;
-    text-align: right;
-}
-
-#asteriskBox .wanted {
-    -webkit- filter: grayscale(100%);  /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-}
-
-.popup{
-    display: none;
-    width: 300px;
-    max-height: 65vh;
-    overflow-y: auto;
-    padding: 30px;
-    position: fixed;
+    border-radius: 5px;
     margin-top: 5px;
-    left: 50%;
-    margin-left: -180px;
-    z-index: 1000;
-    background-color: rgba(252, 240, 230, 1);
-    border-style: solid;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-color: darksalmon;
-    border-width: 1px;
-    box-shadow: 4px 3px;
 }
-.popup img{
-    border-radius: 100%;
-    margin: 0 auto;
-    display: block;
-    border-style: solid;
-    border-width: 1px;
-    width: 200px;
-    background-color: rgba(255, 250, 245, 1);
+button:hover{
+    background-color: #704c58;
 }
 
-/* popup scrollbar */
-
+/* scrollbar */
 /* width */
 ::-webkit-scrollbar {
-    width: 0.2em;
+    width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(255, 249, 243, 0);
+    background: #fffdfe;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: darksalmon;
-    border-radius: 0.1em;
+    background: #67434c;
+    border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: blanchedalmond;
+    background: #815766;
 }
 
-
-
-
-h3 {
+/* p and headings, ul, li */
+h1{
+    font-family: 'Dancing Script';
     text-align: center;
-    padding: s5px 0;
+    font-size: 30px;
 }
-h4 {
+h2{
+    font-family: 'Dancing Script';
     text-align: center;
-    padding: 15px 0;
+    margin-top: 50px;
+    margin-left: -100px;
+    font-size: 30px;
 }
-.close{
-    text-align: right;
-    font-size: 0.6em;
-    cursor: pointer;
+h3{
+    font-family: 'Dancing Script';
+    font-size: 24px;
+    margin-top: 20px;
 }
-.bold{
-    font-weight: 600;
+h4{
+    font-size: 18px;
+    padding: 5px 0;
+    padding-top: 10px;
 }
-.mini{
-    font-size: 0.6em;
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #815766;
+}
+a:hover{
+    text-decoration: underline;
+}
+ul{
+    margin-bottom: 5px;
+}
+li{
+    margin-left: 25px;
+    font-size: 16px;
+}
+p{
+    font-size: 16px;
+}
+span{
+    font-size: 16px;
+}
+br{
+    font-size: 10px;
 }
 
-#artBox img {
-    width: 100%;
-    margin: 0 auto;
+/* page base */
+.content{
+    background-color: #ffebf5;
     display: block;
+    margin: 30px auto;
+    border: 10px solid transparent;
+    -webkit-border-image: url(heartBorder.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(heartBorder.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(heartBorder.png) 30 round;
+    
+    max-width: 500px;
+    padding: 10px;
 }
-#artBox h4 {
-    background-color: rgba(252, 245, 238, 1);
-    border-style: solid;
-    border-width: 0.05em;
+.back p{
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
     cursor: pointer;
-    letter-spacing: 0.2em;
-    margin: 0.2em;
+    margin: 10px;
+    color: #815766;
 }
-#artBox h5{
-    text-align: center;
-    padding: 1em;
-    letter-spacing: 0.2em;
-    background-color: rgba(252, 245, 238, 1);
-    border-style: solid;
-    border-width: 0.05em;
-    cursor: pointer;
-    margin: 0.2em;
+.back p:hover{
+    text-decoration: underline;
 }
-#artBox div:not(.artContent){
-    border-style: solid;
-    border-width: 0.05em;
-    background-color: rgba(252, 245, 238, 1);
-}
-#artBox h4:not(:first-of-type){
-    margin-top: 1em;
-}
-#artBox h5:not(:first-of-type){
-    margin-top: 1em;
-}
-#artBox div:not(:first-child){
-    margin: 0.2em;
-}
-#artBox .mainCatDiv:not(.free){
-    display: none;
-}
-#artBox p{
-    text-align: right;
-    font-size: 0.6em;
-    padding: 0.2em;
+
+/* home */
+#homeContent{
     display: block;
-    clear: both;
+    max-width: 450px;
+    margin: 50px auto 0 auto;
+    max-height: 450px;
 }
-#artBox .smallArt{
-    width: 50%;
-    padding: 0;
+#homeContent h1{
+    font-size: 60px;
+    position: absolute;
+    width: 450px;
+    margin-top: 183px;
+}
+#version{
+    font-size: 12px;
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 330px;
+}
+#homeContent h2{
+    margin-left: 0;
+    margin-top: 160px;
+} 
+
+.homeLink{
+    background-color: #ffebf5;
+    width: 200px;
+    /* instead of height: padding-top to put text at bottom.*/
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #56323b;
+    text-decoration: none;
     float: left;
+    background-size: contain;
 }
-#artBox hr{
-    border: none;
-    height: 0.05em;
-    color: darksalmon;
-    background-color: darksalmon;
+.homeLink:hover{
+    background-color: #fffdfe;
+    cursor: pointer;
+}
+
+.homeLink:nth-of-type(odd){
+    margin-right: 40px;
+}
+.homeLink:nth-of-type(3){
+    margin-top: 40px;
+}
+.homeLink:nth-of-type(4){
+    margin-top: 40px;
+}
+
+.homeLink:nth-of-type(1){
+    border-bottom-right-radius: 0px;
+}
+.homeLink:nth-of-type(2){
+    border-bottom-left-radius: 0px;
+}
+.homeLink:nth-of-type(3){
+    border-top-right-radius: 0px;
+}
+.homeLink:nth-of-type(4){
+    border-top-left-radius: 0px;
+}
+#infoLink{
+    background-image: url(home/info.png);
+}
+#musicLink{
+    background-image: url(home/music.png);
+}
+#gamesLink{
+    background-image: url(home/games.png);
+}
+#artLink{
+    background-image: url(home/art.png);
+}
+
+
+/* info */
+#infoContent h3{
+}
+#yoyoPic{
+    width: 150px;
+    float: right;
+    margin: 0 0 10px 10px;
+    border: #fffdfe 10px solid;
+    border-bottom: #fffdfe 25px solid;
+}
+
+
+/* art */
+#artContent{
+}
+#artContent img {
+    max-width: 458px;
+    padding: 10px;
+}
+#artContent h3{
+    border: 1px solid;
+    padding: 15px;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #fff2f9;
+}
+#artContent h3:not(:first-of-type){
+    margin-top: 20px;
+}
+#artContent h4{
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+#artContent h4:not(:first-of-type){
+    margin-top: 20px;
+}
+#artContent p{
+    margin: 10px;
+}
+
+.mainCatDiv{
+    border: 1px solid;
+    margin: 10px;
+    background-color: #fff2f9;
+}
+.mainCatDiv:not(:first-of-type){
+    display: none;
 }
 .artContent{
     display: none;
 }
 
-p a {
-    font-size: inherit;
+.smallArt {
+    width: 219px;
 }
 
-hr{
-    border-color: darksalmon;
-    border-style: solid;
-    margin: 15px 0;
+#kofi{
+    position: absolute;
+    width: 172px;
+    left: 50%;
+    margin: 10px;
+    margin-left: 68px;
 }
 
-.spotify {
+
+/* games */
+.codeArea{
+    display: none;
+    font-size: 1px;
+}
+.codeDiv{
+    text-align: right;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.favourite .statusImage{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: -100px;
+}
+.favourite{
+    border: 1px solid;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.favourite img{
+    width: 70px;
+    padding: 15px;
+}
+.favourite p:first-of-type{
+    font-family: 'Dancing Script';
+    font-size: 23px;
+    font-weight: 600;
+}
+.favourite p:last-of-type{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.chibi{
+    float: left;
+    margin-left: -10px;
+}
+.card{
+    float: right;
+    border-radius: 100%;
+}
+.furtherFavs{
+    margin-bottom: 10px;
+}
+.furtherFavs img{
+    width: 70px;
+    padding: 15px;
+    border-radius: 100%;
+}
+.furtherFavs img:nth-child(even){
+    padding: 0;
+    width: 100px;
+    margin-left: -100px;
+}
+
+
+/* music */
+#musicContent h3{
+}
+#musicContent p{
+    padding: 10px 0;
+}
+#musicContent img{
+    width: 125px;
+}
+iframe{
     width: 100%;
-    height: 300px;
+    margin: 5px 0;
 }
+#playlists iframe{
+    margin-bottom: 10px;
+}
+#allTimeFavs img{
+    width: 98px;
+    border: 1px solid;
+}
+#musicContent .inactive{
+    opacity: 0.7;
+}
+#musicContent .inactive:hover{
+    opacity: 1;
+}
+
+
+
+
+/*
+        M O B I L E
+                          */
 
 @media only screen and (max-device-width: 450px){
-/*
-}
+    
+    /* bases */
+    button{
+        font-size: 30px;
+        width: 150px;
+        height: 60px;
+        border-radius: 15px;
+    }
 
-@media (max-width: 1000px){
+    /* p and headings, ul, li */
     h1{
-        font-family: monospace;
+        font-size: 30px;
     }
-*/
-
-    
-    body{
-        font-size: 300%;
+    h2{
+        font-size: 70px;
+        margin-left: -200px;
     }
-    #content{
-        width: 96%;
+    h3{
+        font-size: 50px;
     }
-    .box{
-        width: 90%;
-        padding: 5%;
-    }
-    #buttons {
-        margin: 0;
-        padding: 0;
-        display: block;
-        max-width: 96%;
-    }
-    #buttons img {
-        margin: 1vw;
-        width: 8vw;
-        padding: 0;
-        border-width: 0.2vw;
-    }
-    
-    #yoyoPic {
-        width: 40vw;
-    }
-    
-    #asteriskBox img{
-        width: 21%;
-    }
-    .popup{
-        width: 74%;
-        left: 0;
-        margin-left: 8%;
-    }
-    .popup img{
-        width: 60%;
-    }
-    
-    #artBox img {
-        max-width: 90%;
-        max-height: 120%;
-    }
-    
-    .spotify{
-        width: 100%;
-    }
-    
-    .favsPics button {
+    h4{
         font-size: 40px;
     }
-    
-    #asteriskBox li{
-        border-width: 0.1vw;
-        width: 24.8vw;
-        height: 4.8vw;
-        font-size: 3vw;
-        padding-top: 2.2vw;
+    a{
+        font-size: 30px;
     }
-    #asteriskBox li:first-of-type{
-        border-top-left-radius: 1.5vw;
-        border-bottom-left-radius: 1.5vw;
+    li{
+        margin-left: 1.5em;
+        font-size: 30px;
+    }
+    p{
+        font-size: 30px;
+    }
+    br{
+        font-size: 15px;
     }
 
-    #asteriskBox li:last-of-type{
-        border-top-right-radius: 1.5vw;
-        border-bottom-right-radius: 1.5vw;
+    /* page base */
+    .content{
+        margin: 40px;
+        padding: 40px;
+        max-width: none;
     }
-    
-    #asteriskBox ul{ 
-        height: 7vw;
-        width: 75vw;
-        border-radius: 2vw;
-    }
-    
-    #goals h5{
-        font-size: 0.7em;
-        width: 3.7em;
-        padding-right: 0.3em;
-    }
-    
-    .slide{
-        height: auto;
-    }
-    
-    #fictSlide{
-        height: auto;
-    }
-    
 
-    #favCharsButtons {
-        line-height: auto;
+    
+    /* home */
+    #homeContent{
+        max-width: none;
+        max-height: none;
+        width: 684px;
+    }
+    #homeContent h1{
+        font-size: 100px;
+        width: 684px;
+        margin-top: 278px;
+    }
+    #version{
+        font-size: 20px;
+        margin-top: 350px;
+        margin-left: 500px;
+    }
+    #homeContent h2{
+        margin-top: 210px;
+    } 
+
+    .homeLink{
+        width: 300px;
+        height: 300px;
+        border-radius: 60px;
+        background-size: 230px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .homeLink:hover{
+        background-color: #fffdfe;
+        cursor: pointer;
+    }
+
+    .homeLink:nth-of-type(odd){
+        margin-right: 80px;
+    }
+    .homeLink:nth-of-type(3){
+        margin-top: 80px;
+    }
+    .homeLink:nth-of-type(4){
+        margin-top: 80px;
+    }
+
+    /* info */
+    #infoContent h3{
+        margin-top: 20px;
+    }
+    #yoyoPic{
+        width: 300px;
+        float: right;
+        margin: 0 0 20px 20px;
+        border: #fffdfe 20px solid;
+        border-bottom: #fffdfe 35px solid;
+    }
+
+
+    /* art */
+    #artContent{
+    }
+    #artContent img {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .smallArt{
+        width: 50%;
+    }
+
+    #kofi{
+        position: absolute;
+        width: 172px;
+        left: auto;
+        right: 90px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* games */
+    .favourite .statusImage{
+        width: 160px;
+        margin-right: -140px;
+    }
+    .favourite img{
+        width: 120px;
+        padding: 20px;
+    }
+    .favourite{
+        height: 160px;
+        border-radius: 20px;
+    }
+    .favourite p:first-of-type{
+        font-size: 36px;
+    }
+    .favourite p:last-of-type{
+        font-size: 22px;
+    }
+    .furtherFavs img{
+        width: 120px;
+        padding: 20px;
+    }
+    .furtherFavs img:nth-child(even){
+        width: 160px;
+        margin-left: -160px;
+    }
+    
+    /* music */
+    #musicContent img{
+        width: 25%;
+    }
+    iframe{
         width: 100%;
     }
-    #favCharsButtons p {
-        border-radius: 30px;
-        padding: 20px;
-        width: auto;
-        font-size: 0.6em;
-    }
-    
-    
-    #favsBox .popup{
-        position: fixed;
-    }
-    #favsBox .popup img{
-        width: 5em;
-        margin-top: -2.1em;
-        margin-right: 0.5em;
-    }
-    #favsBox .popup li{
-       line-height: 2em;
-       margin-bottom: 3em;
-        border-radius: 1em;
-    }
-    #favsBox .popup li:last-of-type{
-        height: auto;
-    }
-    #favsBox .tiedFavs {
-        width:100%;
-    }
-    #favsBox .tiedFavs img{
-        width: 120px;
+    #allTimeFavs img{
+        width: 19%;
+        padding: 0.333%;
+        background-color: #56323b;
     }
     
 }
-    
