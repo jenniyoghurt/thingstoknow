@@ -179,29 +179,22 @@ br{
     margin-top: 40px;
 }
 
-.homeLink:nth-of-type(1){
-    border-bottom-right-radius: 0px;
-}
-.homeLink:nth-of-type(2){
-    border-bottom-left-radius: 0px;
-}
-.homeLink:nth-of-type(3){
-    border-top-right-radius: 0px;
-}
-.homeLink:nth-of-type(4){
-    border-top-left-radius: 0px;
-}
 #infoLink{
     background-image: url(home/info.png);
+    border-bottom-right-radius: 0px;
 }
 #musicLink{
     background-image: url(home/music.png);
+    border-bottom-left-radius: 0px;
 }
 #gamesLink{
     background-image: url(home/games.png);
+    border-top-right-radius: 0px;
 }
 #artLink{
     background-image: url(home/art.png);
+    border-top-left-radius: 0px;
+    margin-bottom: 50px;
 }
 
 
