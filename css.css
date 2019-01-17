@@ -325,6 +325,11 @@ br{
     width: 100px;
     margin-left: -100px;
 }
+#idolmasterFavs img{
+    width: 70px;
+    padding: 15px;
+    border-radius: 100%;
+}
 
 
 /* music */
