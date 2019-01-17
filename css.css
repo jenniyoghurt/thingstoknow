@@ -517,6 +517,10 @@ iframe{
         width: 160px;
         margin-left: -160px;
     }
+    #idolmasterFavs img {
+        width: 16%;
+        padding: 2%;
+    }
     
     /* music */
     #musicContent img{
