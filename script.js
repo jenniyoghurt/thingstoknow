@@ -304,7 +304,7 @@ var coldplayCounter = 0;
 var youmeatsix = ["music/youmeatsix6.jpg", "music/youmeatsix1.jpg", "music/youmeatsix2.jpg", "music/youmeatsix3.jpg", "music/youmeatsix4.jpg", "music/youmeatsix5.jpg"];
 var youmeatsixCounter = 0;
 
-var bastille = ["music/bastille2.jpg", "music/bastille3.jpg", "music/bastille1.jpg"];
+var bastille = ["music/bastille2.jpg", "music/bastille3.jpg", "music/bastille4.jpg", "music/bastille1.jpg"];
 var bastilleCounter = 0;
 
 var onerepublic = ["music/onerepublic1.jpg", "music/onerepublic2.jpg", "music/onerepublic3.jpg", "music/onerepublic4.jpg"];
