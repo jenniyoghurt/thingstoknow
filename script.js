@@ -73,8 +73,8 @@ var rikoCounter = 0;
 var eli = ["cards/eliChoir.png", "cards/eliJewel.png", "cards/eliPirate.png", "cards/eliPool.png"];
 var eliCounter = 0;
 
-
-var hitsugaya = ["cards/hitsugayaTYBW.png", "cards/hitsugayaDDR.png", "cards/hitsugayaFullbring.png", "cards/hitsugayaTagTeam.png"];
+/* bsfyi hat neues bild (fullbring 2) noch nicht!! bei gelegenheit updaten*/
+var hitsugaya = ["cards/hitsugayaTYBW.png", "cards/hitsugayaDDR.png", "cards/hitsugayaFullbring.png", "cards/hitsugayaTagTeam.png", "cards/hitsugayaFullbring2.png"];
 var hitsugayaCounter = 0;
 
 var ichigo = ["cards/ichigoTYBW2.png", "cards/ichigoDangai.png", "cards/ichigoHellVerse.png"];
