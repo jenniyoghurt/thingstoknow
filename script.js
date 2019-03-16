@@ -38,20 +38,23 @@ var ayaHomeCounter = 0;
 var ayaMissing = ["cards/ayaNY.png", "cards/ayaHallo.png", "cards/ayaDF.png"];
 var ayaMissingCounter = 0;
 
-var hinaHome = ["cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png"];
+var hinaHome = ["cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png", "cards/hinaPastel.png"];
 var hinaHomeCounter = 0;
-var hinaMissing = ["cards/hinaHallo.png", "cards/hinaPastel.png"];
+var hinaMissing = ["cards/hinaHallo.png"];
 var hinaMissingCounter = 0;
 
 var sayoHome = ["cards/sayoGemini.png", "cards/sayoDF.png"];
 var sayoHomeCounter = 0;
-var sayoMissing = ["cards/sayoMermaid.png", "cards/sayoPiano.png", "cards/sayoTanzaku.png"];
+var sayoMissing = ["cards/sayoMermaid.png", "cards/sayoAnni2.png", "cards/sayoPiano.png", "cards/sayoTanzaku.png"];
 var sayoMissingCounter = 0;
 
 var yukinaHome = ["cards/yukinaRain.png"];
 var yukinaHomeCounter = 0;
-var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaAfter.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaBS2.png"];
+var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaAfter.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaEncore.png", "cards/yukinaBS2.png"];
 var yukinaMissingCounter = 0;
+
+var moca = ["cards/mocaAnni2.png", "cards/mocaDF.png"];
+var mocaCounter = 0;
 
 var kanon = ["cards/kanonDF.png", "cards/kanonPenguin.png"];
 var kanonCounter = 0;
@@ -149,6 +152,13 @@ function rotateFavourites(){
         kanonCounter = 0;
     }
     document.getElementById("kanon").src = kanon[kanonCounter];
+    
+    //MOCA
+    mocaCounter++;
+    if(mocaCounter >= moca.length){
+        mocaCounter = 0;
+    }
+    document.getElementById("moca").src = moca[mocaCounter];
     
     //MAKI
     makiHomeCounter++;
