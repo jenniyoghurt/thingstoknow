@@ -65,9 +65,9 @@ var kanonCounter = 0;
 
 
 
-var makiHome = ["cards/makiConstellation.png", "cards/makiChristmasPromo.png", "cards/makiFuwaFuwa.png", "cards/makiFairy.png", "cards/makiAnimal.png", "cards/makiInit.png", "cards/makiValentines.png"];
+var makiHome = ["cards/makiConstellation.png", "cards/makiBirthday.png", "cards/makiChristmasPromo.png", "cards/makiFuwaFuwa.png", "cards/makiFairy.png", "cards/makiAnimal.png", "cards/makiInit.png", "cards/makiValentines.png"];
 var makiHomeCounter = 0;
-var makiMissing = ["cards/makiCrayon.png", "cards/makiFruits.png", "cards/makiCircus.png", "cards/makiMagician.png", "cards/makiBirthday.png", "cards/makiMermaid.png"];
+var makiMissing = ["cards/makiCrayon.png", "cards/makiFruits.png", "cards/makiCircus.png", "cards/makiMagician.png", "cards/makiMermaid.png"];
 var makiMissingCounter = 0;
 
 var yohaneHome = ["cards/yohaneNY.png", "cards/yohaneAC.png", "cards/yohaneHallo.png", "cards/yohaneValentines.png", "cards/yohaneCheshire.png"];
@@ -80,6 +80,9 @@ var rikoCounter = 0;
 
 var eli = ["cards/eliChoir.png", "cards/eliJewel.png", "cards/eliPirate.png", "cards/eliPool.png"];
 var eliCounter = 0;
+
+var you = ["cards/youTimeTravel.png", "cards/youBremen.png"];
+var youCounter = 0;
 
 /* bsfyi hat neues bild (fullbring 2) noch nicht!! bei gelegenheit updaten*/
 var hitsugaya = ["cards/hitsugayaTYBW.png", "cards/hitsugayaDDR.png", "cards/hitsugayaFullbring.png", "cards/hitsugayaTagTeam.png", "cards/hitsugayaFullbring2.png"];
@@ -204,6 +207,13 @@ function rotateFavourites(){
         rikoCounter = 0;
     }
     document.getElementById("riko").src = riko[rikoCounter];
+    
+    //YOU
+    youCounter++;
+    if(youCounter >= you.length){
+        youCounter = 0;
+    }
+    document.getElementById("you").src = you[youCounter];
     
     //ELI
     eliCounter++;
