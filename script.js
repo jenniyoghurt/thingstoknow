@@ -327,7 +327,7 @@ function musicRotate(){
 var nbt = ["music/nbt1.jpg", "music/nbt2.jpg", "music/nbt3.jpg"];
 var nbtCounter = 0;
 
-var localnatives = ["music/localnatives3.jpg", "music/localnatives1.jpg", "music/localnatives2.jpg"];
+var localnatives = ["music/localnatives3.jpg", "music/localnatives4.jpg", "music/localnatives1.jpg", "music/localnatives2.jpg"];
 var localnativesCounter = 0;
 
 var coldplay = ["music/coldplay6.jpg", "music/coldplay7.jpg", "music/coldplay1.jpg", "music/coldplay2.jpg", "music/coldplay3.jpg", "music/coldplay4.jpg", "music/coldplay5.jpg"];
