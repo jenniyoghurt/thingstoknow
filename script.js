@@ -40,7 +40,7 @@ var ayaMissingCounter = 0;
 
 var hinaHome = ["cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png", "cards/hinaPastel.png"];
 var hinaHomeCounter = 0;
-var hinaMissing = ["cards/hinaHallo.png"];
+var hinaMissing = ["cards/hinaHallo.png", "cards/hinaSteamPunk.png"];
 var hinaMissingCounter = 0;
 
 var sayoHome = ["cards/sayoGemini.png", "cards/sayoDF.png"];
@@ -53,7 +53,7 @@ var yukinaHomeCounter = 0;
 var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaAfter.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaEncore.png", "cards/yukinaBS2.png"];
 var yukinaMissingCounter = 0;
 
-var ran = ["cards/ranOctopus.png", "cards/ranAzure.png"];
+var ran = ["cards/ranOctopus.png", "cards/ranAzure.png", "cards/ranBS2.png"];
 var ranCounter = 0;
 
 var moca = ["cards/mocaAnni2.png", "cards/mocaDF.png", "cards/mocaBS2.png"];
