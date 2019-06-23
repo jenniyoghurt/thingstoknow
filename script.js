@@ -45,7 +45,7 @@ var hinaMissingCounter = 0;
 
 var sayoHome = ["cards/sayoGemini.png", "cards/sayoDF.png"];
 var sayoHomeCounter = 0;
-var sayoMissing = ["cards/sayoMermaid.png", "cards/sayoAnni2.png", "cards/sayoPiano.png", "cards/sayoTanzaku.png"];
+var sayoMissing = ["cards/sayoMermaid.png", "cards/sayoBabyLisa.png", "cards/sayoAnni2.png", "cards/sayoPiano.png", "cards/sayoTanzaku.png"];
 var sayoMissingCounter = 0;
 
 var yukinaHome = ["cards/yukinaRain.png"];
