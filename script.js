@@ -62,6 +62,9 @@ var mocaCounter = 0;
 var kanon = ["cards/kanonDF.png", "cards/kanonPenguin.png"];
 var kanonCounter = 0;
 
+var hagumi = ["cards/hagumiCheer.png", "cards/hagumiFuwa.png"];
+var hagumiCounter = 0;
+
 
 
 
@@ -174,6 +177,13 @@ function rotateFavourites(){
         ranCounter = 0;
     }
     document.getElementById("ran").src = ran[ranCounter];
+    
+    //HAGUMI
+    hagumiCounter++;
+    if(hagumiCounter >= hagumi.length){
+        hagumiCounter = 0;
+    }
+    document.getElementById("hagumi").src = hagumi[hagumiCounter];
     
     //MAKI
     makiHomeCounter++;
