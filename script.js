@@ -35,7 +35,7 @@ function favouritesRotate(){
 
 var ayaHome = ["cards/ayaBS2.png", "cards/ayaWhite.png"];
 var ayaHomeCounter = 0;
-var ayaMissing = ["cards/ayaNY.png", "cards/ayaSakura.png", "cards/ayaHallo.png", "cards/ayaDF.png"];
+var ayaMissing = ["cards/ayaNY.png", "cards/ayaSummer.png", "cards/ayaSakura.png", "cards/ayaHallo.png", "cards/ayaDF.png"];
 var ayaMissingCounter = 0;
 
 var hinaHome = ["cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png", "cards/hinaPastel.png"];
@@ -50,7 +50,7 @@ var sayoMissingCounter = 0;
 
 var yukinaHome = ["cards/yukinaRain.png"];
 var yukinaHomeCounter = 0;
-var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaAfter.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaEncore.png", "cards/yukinaBS2.png"];
+var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaAfter.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaEncore.png", "cards/yukinaBS2.png", "cards/yukinaDF.png", "cards/yukinaMarching.png"];
 var yukinaMissingCounter = 0;
 
 var ran = ["cards/ranOctopus.png", "cards/ranAzure.png", "cards/ranBS2.png"];
