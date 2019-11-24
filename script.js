@@ -33,24 +33,24 @@ function favouritesRotate(){
     setInterval(rotateFavourites, 2500)
 }
 
-var ayaHome = ["cards/ayaBS2.png", "cards/ayaWhite.png"];
+var ayaHome = ["cards/ayaBS2.png", "cards/ayaWhite.png", "cards/ayaHallo.png"];
 var ayaHomeCounter = 0;
-var ayaMissing = ["cards/ayaNY.png", "cards/ayaSummer.png", "cards/ayaSakura.png", "cards/ayaHallo.png", "cards/ayaDF.png"];
+var ayaMissing = ["cards/ayaNY.png", "cards/ayaSummer.png", "cards/ayaSakura.png", "cards/ayaDF.png", "cards/ayaKaruta.png", "cards/ayaSelfie.png"];
 var ayaMissingCounter = 0;
 
-var hinaHome = ["cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png", "cards/hinaPastel.png"];
+var hinaHome = ["cards/hinaHallo.png", "cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png", "cards/hinaPastel.png"];
 var hinaHomeCounter = 0;
-var hinaMissing = ["cards/hinaHallo.png", "cards/hinaSteamPunk.png"];
+var hinaMissing = ["cards/hinaSteamPunk.png", "cards/hinaStudent.png"];
 var hinaMissingCounter = 0;
 
 var sayoHome = ["cards/sayoGemini.png", "cards/sayoDF.png"];
 var sayoHomeCounter = 0;
-var sayoMissing = ["cards/sayoMermaid.png", "cards/sayoBabyLisa.png", "cards/sayoAnni2.png", "cards/sayoPiano.png", "cards/sayoTanzaku.png"];
+var sayoMissing = ["cards/sayoMermaid.png", "cards/sayoBabyLisa.png", "cards/sayoKaruta.png", "cards/sayoAnni2.png", "cards/sayoPiano.png", "cards/sayoTanzaku.png"];
 var sayoMissingCounter = 0;
 
 var yukinaHome = ["cards/yukinaAfter.png", "cards/yukinaRain.png"];
 var yukinaHomeCounter = 0;
-var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaEncore.png", "cards/yukinaBS2.png", "cards/yukinaDF.png", "cards/yukinaMarching.png"];
+var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaReZero.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaEncore.png", "cards/yukinaBS2.png", "cards/yukinaDF.png", "cards/yukinaMarching.png"];
 var yukinaMissingCounter = 0;
 
 var ran = ["cards/ranOctopus.png", "cards/ranAzure.png", "cards/ranBS2.png"];

@@ -331,6 +331,10 @@ br{
     border-radius: 100%;
 }
 
+#gameAccounts h3+p{
+    font-size: 14px;
+}
+
 
 /* music */
 #musicContent h3{
