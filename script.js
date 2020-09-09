@@ -33,39 +33,21 @@ function favouritesRotate(){
     setInterval(rotateFavourites, 2500)
 }
 
-var ayaHome = ["cards/ayaBS2.png", "cards/ayaWhite.png", "cards/ayaHallo.png"];
+
+var ayaHome = ["cards/ayaBS2.png", "cards/ayaWhite.png", "cards/ayaHallo.png", "cards/ayaNY.png", "cards/ayaDF.png", "cards/ayaSummer.png"];
 var ayaHomeCounter = 0;
-var ayaMissing = ["cards/ayaNY.png", "cards/ayaSummer.png", "cards/ayaSakura.png", "cards/ayaDF.png", "cards/ayaKaruta.png", "cards/ayaSelfie.png"];
+var ayaMissing = ["cards/ayaSakura.png", "cards/ayaKaruta.png", "cards/ayaSelfie.png", "cards/ayaBook.png"];
 var ayaMissingCounter = 0;
 
 var hinaHome = ["cards/hinaHallo.png", "cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png", "cards/hinaPastel.png"];
 var hinaHomeCounter = 0;
-var hinaMissing = ["cards/hinaSteamPunk.png", "cards/hinaStudent.png"];
+var hinaMissing = ["cards/hinaSteamPunk.png", "cards/hinaStudent.png", "cards/hinaDF.png", "cards/hinaValentines.png", "cards/hinaToys.png", "cards/hinaMermaid.png"];
 var hinaMissingCounter = 0;
 
-var sayoHome = ["cards/sayoGemini.png", "cards/sayoDF.png"];
-var sayoHomeCounter = 0;
-var sayoMissing = ["cards/sayoMermaid.png", "cards/sayoBabyLisa.png", "cards/sayoKaruta.png", "cards/sayoAnni2.png", "cards/sayoPiano.png", "cards/sayoTanzaku.png"];
-var sayoMissingCounter = 0;
-
-var yukinaHome = ["cards/yukinaAfter.png", "cards/yukinaRain.png"];
-var yukinaHomeCounter = 0;
-var yukinaMissing = ["cards/yukinaAnni.png", "cards/yukinaReZero.png", "cards/yukinaBirdCage.png", "cards/yukinaMermaid.png", "cards/yukinaEncore.png", "cards/yukinaBS2.png", "cards/yukinaDF.png", "cards/yukinaMarching.png"];
-var yukinaMissingCounter = 0;
-
-var ran = ["cards/ranOctopus.png", "cards/ranAzure.png", "cards/ranBS2.png"];
-var ranCounter = 0;
-
-var moca = ["cards/mocaAnni2.png", "cards/mocaDF.png", "cards/mocaBS2.png"];
-var mocaCounter = 0;
-
-var kanon = ["cards/kanonDF.png", "cards/kanonPenguin.png"];
-var kanonCounter = 0;
-
-var hagumi = ["cards/hagumiCheer.png", "cards/hagumiFuwa.png"];
-var hagumiCounter = 0;
-
-
+var tsukushiHome = ["cards/tsukushiGarden.png", "cards/tsukushiInitial.png"];
+var tsukushiHomeCounter = 0;
+var tsukushiMissing = [""];
+var tsukushiMissingCounter = 0;
 
 
 var makiHome = ["cards/makiConstellation.png", "cards/makiBirthday.png", "cards/makiChristmasPromo.png", "cards/makiFuwaFuwa.png", "cards/makiFairy.png", "cards/makiAnimal.png", "cards/makiInit.png", "cards/makiValentines.png"];
@@ -131,59 +113,19 @@ function rotateFavourites(){
     }
     document.getElementById("hinaMissing").src = hinaMissing[hinaMissingCounter];
     
-    //SAYO
-    sayoHomeCounter++;
-    if(sayoHomeCounter >= sayoHome.length){
-        sayoHomeCounter = 0;
+    //TSUKUSHI
+    tsukushiHomeCounter++;
+    if(tsukushiHomeCounter >= tsukushiHome.length){
+        tsukushiHomeCounter = 0;
     }
-    document.getElementById("sayoHome").src = sayoHome[sayoHomeCounter];
+    document.getElementById("tsukushiHome").src = tsukushiHome[tsukushiHomeCounter];
     
-    sayoMissingCounter++;
-    if(sayoMissingCounter >= sayoMissing.length){
-        sayoMissingCounter = 0;
+    tsukushiMissingCounter++;
+    if(tsukushiMissingCounter >= tsukushiMissing.length){
+        tsukushiMissingCounter = 0;
     }
-    document.getElementById("sayoMissing").src = sayoMissing[sayoMissingCounter];
+    document.getElementById("tsukushiMissing").src = tsukushiMissing[tsukushiMissingCounter];
     
-    //YUKINA
-    yukinaHomeCounter++;
-    if(yukinaHomeCounter >= yukinaHome.length){
-        yukinaHomeCounter = 0;
-    }
-    document.getElementById("yukinaHome").src = yukinaHome[yukinaHomeCounter];
-    
-    yukinaMissingCounter++;
-    if(yukinaMissingCounter >= yukinaMissing.length){
-        yukinaMissingCounter = 0;
-    }
-    document.getElementById("yukinaMissing").src = yukinaMissing[yukinaMissingCounter];
-    
-    //KANON
-    kanonCounter++;
-    if(kanonCounter >= kanon.length){
-        kanonCounter = 0;
-    }
-    document.getElementById("kanon").src = kanon[kanonCounter];
-    
-    //MOCA
-    mocaCounter++;
-    if(mocaCounter >= moca.length){
-        mocaCounter = 0;
-    }
-    document.getElementById("moca").src = moca[mocaCounter];
-    
-    //RAN
-    ranCounter++;
-    if(ranCounter >= ran.length){
-        ranCounter = 0;
-    }
-    document.getElementById("ran").src = ran[ranCounter];
-    
-    //HAGUMI
-    hagumiCounter++;
-    if(hagumiCounter >= hagumi.length){
-        hagumiCounter = 0;
-    }
-    document.getElementById("hagumi").src = hagumi[hagumiCounter];
     
     //MAKI
     makiHomeCounter++;
