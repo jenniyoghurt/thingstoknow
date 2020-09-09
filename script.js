@@ -46,7 +46,7 @@ var hinaMissingCounter = 0;
 
 var tsukushiHome = ["cards/tsukushiGarden.png", "cards/tsukushiInitial.png"];
 var tsukushiHomeCounter = 0;
-var tsukushiMissing = [""];
+var tsukushiMissing = ["cards/tsukushiNoMissing.png"];
 var tsukushiMissingCounter = 0;
 
 
