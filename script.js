@@ -34,9 +34,9 @@ function favouritesRotate(){
 }
 
 
-var ayaHome = ["cards/ayaBS2.png", "cards/ayaWhite.png", "cards/ayaHallo.png", "cards/ayaNY.png", "cards/ayaDF.png", "cards/ayaSummer.png"];
+var ayaHome = ["cards/ayaSakura.png", "cards/ayaBS2.png", "cards/ayaWhite.png", "cards/ayaHallo.png", "cards/ayaNY.png", "cards/ayaDF.png", "cards/ayaSummer.png"];
 var ayaHomeCounter = 0;
-var ayaMissing = ["cards/ayaSakura.png", "cards/ayaKaruta.png", "cards/ayaSelfie.png", "cards/ayaBook.png"];
+var ayaMissing = ["cards/ayaKaruta.png", "cards/ayaSelfie.png", "cards/ayaBook.png"];
 var ayaMissingCounter = 0;
 
 var hinaHome = ["cards/hinaHallo.png", "cards/hinaGemini.png", "cards/hinaBar.png", "cards/hinaTanzaku.png", "cards/hinaPastel.png"];
