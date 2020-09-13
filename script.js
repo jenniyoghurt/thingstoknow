@@ -1,5 +1,8 @@
 function historyBack() {
-    if(document.referrer == 'https://jenniyoghurt.github.io/thingstoknow/'){
+    console.log(document.referrer)
+    const referrerParts = document.referrer.split('/');
+    const lastPage = referrerParts[referrerParts.length - 1];
+    if(lastPage == "thingstoknow.html" || lastPage == "games.html"){
         window.history.back();
     } else {
         window.open("index.html","_self")
