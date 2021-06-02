@@ -346,6 +346,9 @@ br{
     width: 18%;
     border-radius: 0px;
 }
+.bandoriGoalsImages ~ p{
+    margin-top: 0.5em;
+}
 
 
 /* music */
