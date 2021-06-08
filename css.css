@@ -277,58 +277,31 @@ br{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.favourite .statusImage{
-    width: 100px;
-    margin: 0;
-    padding: 0;
-    float: right;
-    margin-right: -100px;
-}
-.favourite{
+.favourites{
     border: 1px solid;
-    height: 100px;
-    padding: 10px;
-    margin-bottom: 10px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
 }
-.favourite img{
-    width: 70px;
-    padding: 15px;
-}
-.favourite p:first-of-type{
-    font-family: 'Dancing Script';
-    font-size: 23px;
-    font-weight: 600;
-}
-.favourite p:last-of-type{
-    font-size: 14px;
-    padding-top: 10px;
-}
-.chibi{
-    float: left;
-    margin-left: -10px;
-}
-.card{
-    float: right;
+.favourites img{
     border-radius: 100%;
-}
-.furtherFavs{
-    margin-bottom: 10px;
-}
-.furtherFavs img{
-    width: 70px;
-    padding: 15px;
-    border-radius: 100%;
-}
-.furtherFavs img:nth-child(even){
-    padding: 0;
     width: 100px;
-    margin-left: -100px;
 }
-#idolmasterFavs img{
-    width: 70px;
-    padding: 15px;
-    border-radius: 100%;
+.favourites img.miniFav{
+    width: 60px;
+}
+.favourites span {
+    padding: 10px;
+    margin: 0 auto;
+}
+.mainFav:after {
+    content: url(mainFav.png);
+    margin-left: -30px;
+    margin-top: 60px;
+    position: absolute;
 }
 
 #gameAccounts h3+p{
