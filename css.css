@@ -281,21 +281,22 @@ br{
     border: 1px solid;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
     width: 100%;
 }
 .favourites img{
     border-radius: 100%;
-    width: 100px;
-}
-.favourites img.miniFav{
-    width: 60px;
+    width: 100%;
 }
 .favourites span {
-    padding: 10px;
-    margin: 0 auto;
+    padding: 1em;
+    width: 25%;
+    box-sizing: border-box;
+}
+.favourites span.miniFav {
+    width: 20%;
 }
 .mainFav:after {
     content: url(mainFav.png);
