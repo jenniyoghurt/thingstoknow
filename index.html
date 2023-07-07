@@ -14,19 +14,38 @@
     
 </head>
     
-<body>
-    <div id="homeContent">
-    
-        <h1>jenyoyo</h1>
-        <p id="version">version 5.0</p>
-        <a id="infoLink" class="homeLink" href="info.html">
-        <h2>info</h2></a>
-        <a id="musicLink" class="homeLink" href="music.html"><h2>music</h2></a>
-        <a id="gamesLink" class="homeLink" href="games.html"><h2>games</h2></a>
-        <a id="artLink" class="homeLink" href="art.html"><h2>art</h2></a>
-    
-        <a style="display: none;" rel="me" href="https://mastodon.art/@jenyoyo">Linking back to Mastodon to verify the index page</a>
+<body onload="loadArt()">
+    <div
+        id="titleDecoration"
+        aria-hidden="true"
+    >
+        jenyoyo
     </div>
+    <div id="homeContent">
+        <h1>jenyoyo</h1>
+        <p id="version">version 6.0</p>
+        <div id="art">
+            <div class="artContainer">
+                <ul>
+                    <li>she/her</li>
+                    <li>20.07.1996</li>
+                    <li>ace</li>
+                    <li>swimmer</li>
+                    <li>software engineer</li>
+                    <li>artist</li>
+                </ul>
+            </div>
+            <div class="artContainer">
+                <div>
+                    <img src="art/keeping you around.jpg" alt="art for keeping you around - girl with slumped body language, head hanging, holding a floating balloon. Muted colours">
+                    <p>
+                        keeping you around.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a style="display: none;" rel="me" href="https://mastodon.art/@jenyoyo">Linking back to Mastodon to verify the index page</a>
     
 </body>
 </html>

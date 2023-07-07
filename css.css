@@ -1,531 +1,124 @@
-@charset "utf-8";
-
-/* bases */
-* {
-	margin: 0;
-	padding: 0;
-    -webkit-text-size-adjust: none;
-    max-height: 100000px;
-    color: #56323b;
-    font-family: 'Josefin Sans';
-    font-size: 0;
-    border-color: #56323b;
-}
-body{
-    background-color: #fffdfe;
-    overflow-y: scroll;
-}
-hr{
-    border-color: #56323b;
-    border: 1px solid;
-}
-button{
-    font-size: 16px;
-    background-color: #56323b;
-    color: #fffdfe;
-    border: none;
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-button:hover{
-    background-color: #704c58;
-}
-
-/* scrollbar */
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #fffdfe;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #67434c;
-    border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #815766;
-}
-
-/* p and headings, ul, li */
-h1{
-    font-family: 'Dancing Script';
+body {
+    background: black;
+    min-height: 200vh;
+    color: white;
+    font-family: Josefin Sans;
     text-align: center;
-    font-size: 30px;
-}
-h2{
-    font-family: 'Dancing Script';
-    text-align: center;
-    margin-top: 50px;
-    margin-left: -100px;
-    font-size: 30px;
-}
-h3{
-    font-family: 'Dancing Script';
-    font-size: 24px;
-    margin-top: 20px;
-}
-h4{
-    font-size: 18px;
-    padding: 5px 0;
-    padding-top: 10px;
-}
-a{
-    font-size: 16px;
-    text-decoration: none;
-    color: #815766;
-}
-a:hover{
-    text-decoration: underline;
-}
-ul{
-    margin-bottom: 5px;
-}
-li{
-    margin-left: 25px;
-    font-size: 16px;
-}
-p{
-    font-size: 16px;
-}
-span{
-    font-size: 16px;
-}
-br{
-    font-size: 10px;
 }
 
-/* page base */
-.content{
-    background-color: #ffebf5;
-    display: block;
-    margin: 30px auto;
-    border: 10px solid transparent;
-    -webkit-border-image: url(heartBorder.png) 30 round; /* Safari 3.1-5 */
-    -o-border-image: url(heartBorder.png) 30 round; /* Opera 11-12.1 */
-    border-image: url(heartBorder.png) 30 round;
-    
-    max-width: 500px;
-    padding: 10px;
+#titleDecoration {
+    z-index: -1;
+    color: #101010;
+    font-size: 110vh;
+    overflow:visible;
+    margin: 0;
+    margin-top: -10vh;
+    pointer-events: none;
+    position: fixed;
+    animation: titleTransform 1s linear infinite;
+    transition: right;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
 }
-.back p{
-    padding: 10px;
+
+@keyframes titleTransform {
+    0% {right: calc(100vw - 375vh);}
+    100% {right: 0;}
+}
+
+#homeContent {
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    font-size: 5em;
+    margin: 0;
+    width: 100%;
+}
+
+h1 + p {
+    font-size: 0.8em;
+    width: 100%;
+    color: #999;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+#art .artContainer div {
+    border: 0.1rem dashed #55ecff;
+    padding: 0.3rem;
     display: inline-block;
-    position: absolute;
-    cursor: pointer;
-    margin: 10px;
-    color: #815766;
-}
-.back p:hover{
-    text-decoration: underline;
+    font-size: 0;
 }
 
-/* home */
-#homeContent{
-    display: block;
-    max-width: 450px;
-    margin: 50px auto 0 auto;
-    max-height: 450px;
-}
-#homeContent h1{
-    font-size: 60px;
-    position: absolute;
-    width: 450px;
-    margin-top: 183px;
-}
-#version{
-    font-size: 12px;
-    position: absolute;
-    margin-top: 225px;
-    margin-left: 330px;
-}
-#homeContent h2{
-    margin-left: 0;
-    margin-top: 160px;
-} 
-
-.homeLink{
-    background-color: #ffebf5;
-    width: 200px;
-    /* instead of height: padding-top to put text at bottom.*/
-    height: 200px;
-    border-radius: 20px;
-    border: 1px solid #56323b;
-    text-decoration: none;
-    float: left;
-    background-size: contain;
-}
-.homeLink:hover{
-    background-color: #fffdfe;
-    cursor: pointer;
+#art img {
+    height: 50vh;
+    border: 0.2rem white solid;
 }
 
-.homeLink:nth-of-type(odd){
-    margin-right: 40px;
-}
-.homeLink:nth-of-type(3){
-    margin-top: 40px;
-}
-.homeLink:nth-of-type(4){
-    margin-top: 40px;
-}
-
-#infoLink{
-    background-image: url(home/info.png);
-    border-bottom-right-radius: 0px;
-}
-#musicLink{
-    background-image: url(home/music.png);
-    border-bottom-left-radius: 0px;
-}
-#gamesLink{
-    background-image: url(home/games.png);
-    border-top-right-radius: 0px;
-}
-#artLink{
-    background-image: url(home/art.png);
-    border-top-left-radius: 0px;
-    margin-bottom: 50px;
-}
-
-
-/* info */
-#infoContent h3{
-}
-#yoyoPic{
-    width: 150px;
-    float: right;
-    margin: 0 0 10px 10px;
-    border: #fffdfe 10px solid;
-    border-bottom: #fffdfe 25px solid;
-}
-
-
-/* art */
-#artContent{
-}
-#artContent img {
-    max-width: 458px;
-    padding: 10px;
-}
-#artContent h3{
-    border: 1px solid;
-    padding: 15px;
-    cursor: pointer;
-    margin: 10px;
-    background-color: #fff2f9;
-}
-#artContent h3:not(:first-of-type){
-    margin-top: 20px;
-}
-#artContent h4{
-    border: 1px solid;
-    padding: 10px;
-    cursor: pointer;
-    margin: 10px;
-}
-#artContent h4:not(:first-of-type){
-    margin-top: 20px;
-}
-#artContent p{
-    margin: 10px;
-}
-
-.mainCatDiv{
-    border: 1px solid;
-    margin: 10px;
-    background-color: #fff2f9;
-}
-.mainCatDiv:not(:first-of-type){
-    display: none;
-}
-.artContent{
-    display: none;
-}
-
-.smallArt {
-    width: 219px;
-}
-
-#kofi{
-    position: absolute;
-    width: 172px;
-    left: 50%;
-    margin: 10px;
-    margin-left: 68px;
-}
-
-
-/* games */
-.codeArea{
-    display: none;
-    font-size: 1px;
-}
-.codeDiv{
-    text-align: right;
-    float: right;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.favourites{
-    border: 1px solid;
-    border-radius: 10px;
+#art {
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-}
-.favourites img{
-    border-radius: 100%;
-    width: 100%;
-}
-.favourites span {
-    padding: 1em;
-    width: 25%;
-    box-sizing: border-box;
-}
-.favourites span.miniFav {
-    width: 20%;
-}
-.mainFav:after {
-    content: url(mainFav.png);
-    margin-left: -30px;
-    margin-top: 60px;
-    position: absolute;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
-#gameAccounts h3+p{
-    font-size: 14px;
+/* Hide scrollbar for Chrome, Safari and Opera */
+#art::-webkit-scrollbar, body::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+#art, body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 
-
-/* bandori goals */
-.bandoriGoalsImages {
+.artContainer {
+    min-width: 100vw;
     display: flex;
-    width: auto;
-    flex-wrap: wrap;
-}
-.bandoriGoalsImages img {
-    width: 18%;
-    border-radius: 0px;
-}
-.bandoriGoalsImages ~ p{
-    margin-top: 0.5em;
+    scroll-snap-align: start;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
-
-/* music */
-#musicContent h3{
-}
-#musicContent p{
-    padding: 10px 0;
-}
-#musicContent img{
-    width: 125px;
-}
-iframe{
-    width: 100%;
-    margin: 5px 0;
-}
-#playlists iframe{
-    margin-bottom: 10px;
-}
-#allTimeFavs img{
-    width: 98px;
-    border: 1px solid;
-}
-#musicContent .inactive{
-    opacity: 0.7;
-}
-#musicContent .inactive:hover{
-    opacity: 1;
+.artContainer:not(:first-of-type)::before {
+    content: "";
+    background-image: url("leftArrow.png");
+    width: 20px;
+    height: 60px;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: 3em;
 }
 
+.artContainer:not(:last-of-type)::after {
+    content: "";
+    background-image: url("rightArrow.png");
+    width: 20px;
+    height: 60px;
+    position: absolute;
+    top: calc(50% - 30px);
+    right: 3em;
+}
 
+.artContainer p {
+    font-size: 1rem;
+}
 
+.artContainer a {
+    font-size: 1rem;
+    color: #55ecff;
+    border-bottom: 2px dashed #55ecff;
+}
 
-/*
-        M O B I L E
-                          */
-
-@media only screen and (max-device-width: 450px){
-    
-    /* bases */
-    button{
-        font-size: 30px;
-        width: 150px;
-        height: 60px;
-        border-radius: 15px;
-    }
-
-    /* p and headings, ul, li */
-    h1{
-        font-size: 30px;
-    }
-    h2{
-        font-size: 70px;
-        margin-left: -200px;
-    }
-    h3{
-        font-size: 50px;
-    }
-    h4{
-        font-size: 40px;
-    }
-    a{
-        font-size: 30px;
-    }
-    li{
-        margin-left: 1.5em;
-        font-size: 30px;
-    }
-    p{
-        font-size: 30px;
-    }
-    br{
-        font-size: 15px;
-    }
-
-    /* page base */
-    .content{
-        margin: 40px;
-        padding: 40px;
-        max-width: none;
-    }
-
-    
-    /* home */
-    #homeContent{
-        max-width: none;
-        max-height: none;
-        width: 684px;
-    }
-    #homeContent h1{
-        font-size: 100px;
-        width: 684px;
-        margin-top: 278px;
-    }
-    #version{
-        font-size: 20px;
-        margin-top: 350px;
-        margin-left: 500px;
-    }
-    #homeContent h2{
-        margin-top: 210px;
-    } 
-
-    .homeLink{
-        width: 300px;
-        height: 300px;
-        border-radius: 60px;
-        background-size: 230px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    .homeLink:hover{
-        background-color: #fffdfe;
-        cursor: pointer;
-    }
-
-    .homeLink:nth-of-type(odd){
-        margin-right: 80px;
-    }
-    .homeLink:nth-of-type(3){
-        margin-top: 80px;
-    }
-    .homeLink:nth-of-type(4){
-        margin-top: 80px;
-    }
-
-    /* info */
-    #infoContent h3{
-        margin-top: 20px;
-    }
-    #yoyoPic{
-        width: 300px;
-        float: right;
-        margin: 0 0 20px 20px;
-        border: #fffdfe 20px solid;
-        border-bottom: #fffdfe 35px solid;
-    }
-
-
-    /* art */
-    #artContent{
-    }
-    #artContent img {
-        max-width: 100%;
-        padding: 0px;
-    }
-    .smallArt{
-        width: 50%;
-    }
-
-    #kofi{
-        position: absolute;
-        width: 172px;
-        left: auto;
-        right: 90px;
-        margin: 0;
-        padding: 0;
-    }
-
-
-    /* games */
-    .favourite .statusImage{
-        width: 160px;
-        margin-right: -160px;
-    }
-    .favourite img{
-        width: 120px;
-        padding: 20px;
-    }
-    .favourite{
-        height: auto;
-        min-height: 160px;
-        border-radius: 20px;
-    }
-    .favourite p:first-of-type{
-        font-size: 36px;
-    }
-    .favourite p:last-of-type{
-        font-size: 22px;
-    }
-    .furtherFavs img{
-        width: 16%;
-        padding: 2%;
-    }
-    .furtherFavs img:nth-child(even){
-        width: 160px;
-        margin-left: -160px;
-    }
-    #idolmasterFavs img {
-        width: 16%;
-        padding: 2%;
-    }
-    
-    /* music */
-    #musicContent img{
-        width: 25%;
-    }
-    iframe{
-        width: 100%;
-    }
-    #allTimeFavs img{
-        width: 19%;
-        padding: 0.333%;
-        background-color: #56323b;
-    }
-    
+#art .otherImage {
+    height: 30vh;
 }
